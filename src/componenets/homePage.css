@@ -1,0 +1,14 @@
+.pg-container{
+    display: flex;
+    padding-top: 2rem;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.pg-container a{
+    text-decoration: none;
+}
+

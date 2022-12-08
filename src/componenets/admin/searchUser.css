@@ -1,0 +1,39 @@
+.all-courses-container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* border: 1px solid red; */
+}
+
+.category-container{
+    display: flex;
+   margin-bottom: 5px;
+   overflow-x: auto;
+   margin: auto;
+}
+
+
+
+.category-container p{
+   margin: 10px 10px;
+   padding: 4px 10px;
+   background-color: rgb(240 247 255);
+   cursor: pointer;
+}
+
+.courses-displayer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+}
+
+
+
+
+.all-courses-container input{
+    margin: 1.2rem 0;
+}
