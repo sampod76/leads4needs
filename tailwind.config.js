@@ -11,7 +11,8 @@ module.exports = {
         lg: '976px',
         lgg: '1160px',
         lggg: '1230px',
-        xl: '1440px'
+        xl: '1440px',
+      
       },
     },
   },

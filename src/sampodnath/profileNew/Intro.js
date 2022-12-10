@@ -5,33 +5,47 @@ import My_Location from '../Img/My_Location.png'
 
 import Footer_Image_2 from '../Img/Footer_Image_2.png'
 import { BsArrowRight } from "react-icons/bs";
+import { FaFacebook, FaLinkedin, FaTwitterSquare, FaWhatsappSquare } from 'react-icons/fa';
+import { SiTelegram } from 'react-icons/si';
 
 const Intro = () => {
     return (
-        <div>
-            <div className='my-4 hidden md:block'>
-                <h4>Map</h4>
+        <div className='-mt-4 '>
+            <div className='mb-4 mt-4'>
+                <h4 className='font-semibold'>Map</h4>
                 <div>
-                    <img src={map} alt="" />
+                    <img src={map} alt="" className='h-[10rem] md:h-full'/>
+                </div>
+            </div>
+            <div className='hidden md:block'>
+
+                <h3>Share this business</h3>
+
+                <div className='flex gap-2 my-3'>
+                    <FaFacebook className='w-10  h-10 ' ></FaFacebook>
+                    <FaLinkedin className='w-10  h-10 ' ></FaLinkedin>
+                    <FaWhatsappSquare className='w-10  h-10 ' ></FaWhatsappSquare>
+                    <FaTwitterSquare className='w-10  h-10 ' ></FaTwitterSquare>
+                    <SiTelegram className='w-10  h-10 ' ></SiTelegram>
                 </div>
             </div>
 
-            <div className='my-4'>
+
+            <div className='mt-4'>
                 <h4>Description</h4>
-                <p>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website.</p>
+                <p className='text-lg'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website.</p>
             </div>
 
-            <div style={{ background: `url(${Footer_Image_2})`, "height": "100%", "width": "100%", "backgroundRepeat": "no-repeat", "backgroundSize": "auto" }} className='my-4 md:p-5 px-2'  >
+            <div style={{ background: `url(${Footer_Image_2})`, "height": "100%", "width": "100%", "backgroundRepeat": "no-repeat", "backgroundSize": "auto" }} className='my-2 md:p-5 px-2'  >
 
                 <div className='md:flex justify-around pt-4 md:pt-10 text-white'>
 
                     <div className='text-white space-y-1 md:ml-[3rem] md:w-1/4'>
                         <p className='font-semibold'>PG Wars</p>
                         <div className='flex md:block items-center '>
-                            <p className='text-lg md:text-2xl'>Easiest way </p>
-                            <p className='text-lg  md:text-2xl mb-[1.5rem] md:ml-1 '>to find yourself a <span className='text-3xl font-bold'>PG</span>.</p>
+                            <p className='text-lg md:text-2xl  '>Easiest way <br className='hidden md:block' /> to find yourself a <span className='md:text-3xl text-lg font-bold'>PG</span>.</p>
                         </div>
-                        <h5 className='flex items-center bg-white text-black p-1 px-2 rounded-lg md:mt-4 w-fit'>FREE REGISTER <span><BsArrowRight></BsArrowRight></span></h5>
+                        <h5 className='flex items-center bg-white text-black p-1 md:px-2 rounded-lg md:mt-4 w-fit text-sm'>FREE REGISTER <span><BsArrowRight></BsArrowRight></span></h5>
                     </div>
                     <div className='flex text-sm justify-around md:w-3/4 gap-2'>
                         <div className='space-y-2'>
