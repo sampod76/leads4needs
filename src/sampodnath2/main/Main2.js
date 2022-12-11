@@ -30,7 +30,7 @@ const Main2 = () => {
 
                 <Img></Img>
 
-                <div className='absolute right-[5%] top-[2%]'>
+                <div className='absolute right-[5%] top-[2%] md:hidden'>
 
                     <Menu as="div" className="relative inline-block text-left">
                         <div>

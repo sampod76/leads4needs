@@ -1,0 +1,35 @@
+.uplode i {
+    position: absolute;
+    /* top: 50%; */
+    left: -15px;
+    width: 120px;
+    height: 40px;
+    background: #6366f1;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .uplode i::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+   
+    width: 15px;
+    height: 25px;
+    background: #4338ca;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+  }
+  
+  .uplode i::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+   
+    width: 15px;
+    height: 15px;
+    background: #6366f1;
+    z-index: 1;
+  }
+  

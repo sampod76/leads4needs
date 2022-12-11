@@ -8,7 +8,7 @@ import { MdCall } from 'react-icons/md';
 
 const Rightside = () => {
     return (
-        <div className='space-y-4 md:mt-4'>
+        <div className='space-y-4 md:mt-4 hidden md:block'>
             <h3>Share this business</h3>
 
             <div className='flex gap-2'>

@@ -6,9 +6,9 @@ const Leftside = () => {
     return (
         <div className='space-y-4  '>
             <div className='md:space-y-2 space-y-1 '>
-                <h5 className=' text-black font-semibold text-xl md:text-4xl xl:text-6xl md:pt-2  '>ABC Dentist </h5>
+                <h5 className=' text-black font-bold text-2xl md:text-4xl xl:text-6xl md:pt-2  '>ABC Dentist </h5>
                 <p className='lg:text-2xl md:tracking-wide text-gray-500 md:py-2 md:text-xl'>2685, Outram Lines, GTB Nagar, Delhi, 110009</p>
-                <p className='font-semibold md:text-3xl md:py-2'>11 a.m. to 7:00 p.m.</p>
+                <p className='font-semibold md:text-xl md:py-2'>11 a.m. to 7:00 p.m.</p>
                 <div className='flex items-center '>
                     <div className='flex mt-1 '>
                         {/* <FcRating></FcRating>
@@ -37,7 +37,7 @@ const Leftside = () => {
                 </div>
             </div>
             <div className=''>
-                <h3 className='-mt-5'>Business Specialization</h3>
+                <h3 className='-mt-5 text-xl'>Business Specialization</h3>
                 <div className='grid grid-cols-2 gap-4 text-center'>
                     <div className='border-2 bg-[#7065F0] text-white rounded-lg  text-base px-1 py-3 font-semibold'>
                         Digital Marketing

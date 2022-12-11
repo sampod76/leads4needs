@@ -39,11 +39,7 @@ const Main = () => {
 
 
                 <Image></Image>
-                {
-
-                    <UseShareButton manu={manu}>
-                    </UseShareButton>
-                }
+               
 
                 <div className='flex justify-between gap-11  md:my-10 '>
 

@@ -30,6 +30,9 @@ import UpdatePG from './componenets/UpdatePG';
 import Mcd from './componenets/Layout/Mcd'
 import Main from "./sampodnath/Main/Main";
 import Main2 from "./sampodnath2/main/Main2";
+import Main3 from "./sampodnath3/Main3";
+import Main4 from "./sampodnath4/Main4";
+import Main6 from "./sampodnath6/Main6";
 
 
 
@@ -59,6 +62,9 @@ function App() {
         <Route path='/' element={<LoginPage />} />
         <Route path='/sampod' element={<Main />} />
         <Route path='/sampod2' element={<Main2 />} />
+        <Route path='/sampod3' element={<Main3 />} />
+        <Route path='/sampod4' element={<Main4 />} />
+        <Route path='/sampod6' element={<Main6 />} />
 
 
 
