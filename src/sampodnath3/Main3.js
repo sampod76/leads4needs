@@ -4,14 +4,7 @@ import Footer_Image_2 from '../sampodnath3/Img/Footer_Image_2.png'
 import Mail from '../sampodnath3/Img/Mail.png'
 import My_Location from '../sampodnath3/Img/My_Location.png'
 import '../sampodnath3/card.css'
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import Box from '@mui/material/Box';
-// import Slider from '@mui/material/Slider';
-import Typography from '@material-ui/core/Typography';
+
 import Slider from '@material-ui/core/Slider';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosMan } from "react-icons/io";
@@ -168,7 +161,7 @@ const Main3 = () => {
                                 </div>
                             </div>
                         </div>
-                        <i className='top-[50%] md:top-[42%] lg:top-[39%] lgg:top-[39%] lggg:top-[46%] '><div className='flex ml-2'><IoIosMan className='text-5xl text-white'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2'>Man</h4> </div> </i>
+                        <i className='top-[48%] md:top-[42%] lg:top-[39%] lgg:top-[39%] lggg:top-[46%] '><div className='flex ml-2'><IoIosMan className='text-5xl text-white'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2'>Man</h4> </div> </i>
                     </div>
                     <div className='card relative w-90 md:w-[100%]  mx-auto  shadow-lg'>
 

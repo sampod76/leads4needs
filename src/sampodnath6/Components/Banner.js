@@ -1,33 +1,55 @@
 import { faCoffee, faLink, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { BsFillPencilFill } from "react-icons/bs";
 import img from "../img1/img1.png";
 import img1 from "../img1/img2.png";
+import RatingStart from "./RatingStart";
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import { useState } from "react";
+
 
 const Banner = () => {
+  const [value, setValue] = useState(2);
   return (
     <div className=" ">
       <div className="">
         <img src={img} alt="" className="w-full h-72 md:h-full lg:h-full " />
       </div>
-      <div className=" lg:w-[1224px]  md:w-[778px] w-80 mx-auto p-5 border-2 rounded-2xl bg-white relative bottom-12">
+      <div className=" lg:w-[1224px]  md:w-[778px] w-80 mx-auto lg:p-5 p-2 border-2 rounded-2xl bg-white relative bottom-12">
         <div className=" lg:flex lg:justify-between ">
-          <div className="flex gap-5">
-            <img src={img1} className="w-24 h-24 lg:w-36 lg:h-36" alt="" />
+          <div className="flex gap-2 lg:gap-5">
+            <img src={img1} className="w-16 h-16 lg:w-36 lg:h-36" alt="" />
             <div className=" w-full lg:w-2/3 ">
-              <h1 className=" font-bold ">McDonalds</h1>
-              <p className=" my-2 text-gray-700 text-sm">
-                Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
-                Mumbai, Maharashtra 400614
-              </p>
+              <h1 className="text-lg font-bold ">McDonalds</h1>
+              <div className="flex">
+                <p className=" my-2 text-gray-700 text-sm">
+                  Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
+                  Mumbai, Maharashtra 400614
+                </p>
+                <BsFillPencilFill className="text-lg mt-2"></BsFillPencilFill>
+              </div>
               <div className="flex gap-2 text-sm">
                 <span>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faStar}
-                    className=" text-yellow-500 mr-2"
-                  />
-                  4.8/5
+                  <Box
+                    sx={{
+                      '& > legend': { mt: 2 },
+                    }}
+                  >
+                    <Typography component="legend"> <span className="ml-1">Rating:</span>{value}</Typography>
+                    <Rating
+                      name="simple-controlled"
+                      value={value}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                    
+                  </Box>
+
+              
                 </span>
                 <a href="" className=" text-indigo-600">
                   <FontAwesomeIcon
@@ -39,12 +61,12 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className=" flex gap-2 my-7">
-            <button className="btn btn-outline">Share</button>
-            <button className="btn  bg-indigo-500">Call Now</button>
+          <div className=" flex gap-2 ">
+            <button className="rounded-md px-2 lg:p-3 border-2 h-10   lg:h-14 mt text-black ">Share</button>
+            <button className="rounded-md px-2 lg:p-3 bg-indigo-500 h-10  lg:h-14 mt text-white ">Call Now</button>
           </div>
         </div>
-        <div className="` flex justify-around  my-8 bg-slate-100 p-4 lg:w-1/2 gap-5 rounded-lg">
+        <div className="` flex justify-around  my-8 bg-slate-100 lg:p-4 p-3 lg:w-1/2 gap-5 rounded-lg">
           <div className="">
             <h2 className="text-2xl font-bold">52</h2>
             <p className="my-2">Total Businesses</p>

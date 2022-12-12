@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 import { AiOutlineEye } from "react-icons/ai";
 import { FiTrash2 } from "react-icons/fi";
 import './Home.css'
+import { TagsInput } from "react-tag-input-component";
 
 const Home = () => {
+    const [selected, setSelected] = useState(["papaya"]);
+    console.log(selected);
     return (
         <div className='flex justify-between gap-[7%] p-1  '>
 
@@ -100,6 +103,16 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h4 className='text-xl'>Add Tag</h4>
+                        {/* <pre className='flex'>{selected.map(se=><p >,{se}</p>)}</pre> */}
+                        <TagsInput
+                            value={selected}
+                            onChange={setSelected}
+                            name="fruits"
+                            placeHolder="enter fruits"
+                        />
+                    </div>
 
                     <div className=''>
                         <h1 className='my-2 text-lg'>Upload Images</h1>
@@ -116,7 +129,7 @@ const Home = () => {
                                     <h1 className='p-2 rounded-2xl bg-[#7065F0] w-[40%]   '> </h1>
                                     <h1 className='p-2 rounded-2xl bg-[#000929] w-[40%]   '> </h1>
                                     <h1 className='p-2 rounded-2xl bg-[#878787] w-[80%]   '> </h1>
-                                    
+
 
                                 </div>
                                 <i className='top-[43%]'>
@@ -126,7 +139,7 @@ const Home = () => {
 
                                     </div>
                                 </i>
-                              
+
                                 <div className='flex gap-1 justify-around '>
                                     <div className='flex gap-[4px]'>
                                         <p className='w-5 h-5 mt-1  rounded-full bg-[#7065F0]'></p>
@@ -151,6 +164,7 @@ const Home = () => {
 
                         </div>
                     </div>
+
 
                     <div className=' border-2 border-gray-300 p-[0.685rem] rounded-lg'>
                         <div className='grid grid-cols-6 gap-1 justify-between items-center'>

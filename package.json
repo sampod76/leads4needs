@@ -33,12 +33,14 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
     "react-redux": "^8.0.5",
     "react-router": "^6.3.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.5",
     "react-router-sitemap": "^1.2.0",
     "react-router-sitemap-generator": "^0.0.8",
     "react-scripts": "^5.0.1",
+    "react-tag-input-component": "^2.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
