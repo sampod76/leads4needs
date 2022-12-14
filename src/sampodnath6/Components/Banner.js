@@ -8,6 +8,7 @@ import RatingStart from "./RatingStart";
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
+import { RiShareForwardFill } from "react-icons/ri";
 import { useState } from "react";
 
 
@@ -35,7 +36,7 @@ const Banner = () => {
                 <span>
                   <Box
                     sx={{
-                      '& > legend': { mt: 2 },
+                      '& > legend': { mt: 1 },
                     }}
                   >
                     <Typography component="legend"> <span className="ml-1">Rating:</span>{value}</Typography>
@@ -51,18 +52,18 @@ const Banner = () => {
 
               
                 </span>
-                <a href="" className=" text-indigo-600">
-                  <FontAwesomeIcon
+               <div className="mt-3">
+               <FontAwesomeIcon
                     icon={faLink}
                     className="mr-2"
                   ></FontAwesomeIcon>
-                  mcDonalds.com
-                </a>
+                   mcDonalds.com
+               </div>
               </div>
             </div>
           </div>
           <div className=" flex gap-2 ">
-            <button className="rounded-md px-2 lg:p-3 border-2 h-10   lg:h-14 mt text-black ">Share</button>
+            <button className="rounded-md px-2 lg:p-3 border-2 h-10   lg:h-14 mt text-black  flex">Share <RiShareForwardFill className="text-lg mt-1 mx-1"></RiShareForwardFill> </button>
             <button className="rounded-md px-2 lg:p-3 bg-indigo-500 h-10  lg:h-14 mt text-white ">Call Now</button>
           </div>
         </div>
