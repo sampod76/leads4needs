@@ -48,10 +48,7 @@ const Features = () => {
             <img src={soup_kitchen} alt="" className='max-w-[2.125rem] pt-3' />
             <p className='text-lg'>Parking </p>
         </div>,
-        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem] md:hidden'>
-            <img src={local_parking} alt="" className='max-w-[2.125rem] pt-3' />
-            <p className='text-lg'>AC</p>
-        </div>
+       
     ]
     return (
 
@@ -109,9 +106,9 @@ const Features = () => {
                         }
 
                     </div>
-                    <div className='grid grid-cols-3 gap-2  md:hidden '>
+                    <div className='grid grid-cols-3 gap-4  md:hidden '>
                     {features ?
-                            featuresAll.map(feature => feature) :featuresAll.slice(0,3).map(feature => feature)
+                            featuresAll.map(feature => feature) :featuresAll.slice(0,6).map(feature => feature)
                         }
 
                     </div>

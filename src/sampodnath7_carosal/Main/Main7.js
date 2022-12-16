@@ -34,7 +34,7 @@ const Main7 = () => {
     <SiTelegram className='w-6 h-6 md:w-10 md:h-10 ' ></SiTelegram>]
     return (
         <div className='relative md:mx-20 '>
-            <div className='block md:hidden w-full h-full bg-fixed' >
+            <div className='block md:hidden w-full overflow-hidden h-full bg-fixed' >
 
                 <Slider {...settings}>
                 <div className=" ">
@@ -58,7 +58,7 @@ const Main7 = () => {
                 </Slider>
             </div>
 
-            <div className='md:container mx-auto p-4 flex flex-col justify-between absolute md:relative top-[90%]  bg-white rounded-3xl  overflow-hidden'>
+            <div className='md:container mx-auto p-4 flex flex-col justify-between absolute md:relative top-[90%]  bg-white rounded-[1.875rem]  overflow-hidden'>
 
                 {/* <Navbar></Navbar> */}
 
