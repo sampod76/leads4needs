@@ -100,11 +100,13 @@ const Image = () => {
                             leaveTo="opacity-0"
                         >
 
-                            <div className="fixed inset-0 bg-black bg-opacity-75" >
+                            <div className="fixed inset-0 bg-white bg-opacity-80" >
+                               
+                                <button className='absolute top-[5%] md:text-5xl text-lg right-[5%]   rounded-full bg-[#7065F0] px-3 py-3 text-white font-bold'>X</button>
 
-                                <button className='absolute top-[5%] md:text-5xl text-lg left-[5%] border-2 rounded-lg md:px-4 px-2 text-white'>X</button>
                             </div>
                         </Transition.Child>
+
 
                         <div className="fixed inset-0 overflow-y-auto ">
                             <div className="flex min-h-full items-center justify-center p-4 text-center">

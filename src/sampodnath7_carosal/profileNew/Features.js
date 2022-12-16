@@ -7,8 +7,52 @@ import soup_kitchen from '../Img/soup_kitchen.png'
 import Group_84 from '../Img/Group_84.png'
 import Group_77 from '../Img/Group_77.png'
 import { MdCall } from 'react-icons/md';
+import { useState } from 'react';
 
 const Features = () => {
+    const [features, setFeatures] = useState(false)
+
+    const featuresAll = [
+        <div className='flex flex-col  justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={bathroom} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg'>Food</p>
+        </div>,
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={heat_pump} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg'>Geyser</p>
+        </div>,
+
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={local_parking} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg'>AC</p>
+        </div>,
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={soup_kitchen} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg md:text-sm lg:text-lg text-center'>No Parking </p>
+        </div>,
+
+        <div className='flex flex-col  justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={bathroom} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg'>Food</p>
+        </div>,
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={heat_pump} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg md:text-sm lg:text-lg text-center'>No Geyser</p>
+        </div>,
+
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={local_parking} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg md:text-sm lg:text-lg text-center'>No AC</p>
+        </div>,
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
+            <img src={soup_kitchen} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg'>Parking </p>
+        </div>,
+        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem] md:hidden'>
+            <img src={local_parking} alt="" className='max-w-[2.125rem] pt-3' />
+            <p className='text-lg'>AC</p>
+        </div>
+    ]
     return (
 
 
@@ -52,45 +96,23 @@ const Features = () => {
                         </button>
                     </div>
                 </div>
-                <div className='md:my-2 -mr-8 md:mr-1'>
-                    <h5 className='mb-3'>Features</h5>
-                    <div className=' grid grid-cols-4  gap-4 '>
-                        <div className='flex flex-col  justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={bathroom} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>Food</p>
-                        </div>
-                        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={heat_pump} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>Geyser</p>
-                        </div>
+                <div className='md:my-2  md:mr-1'>
+                    <div className='flex justify-between'>
 
-                        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={local_parking} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>AC</p>
-                        </div>
-                        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={soup_kitchen} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>Parking </p>
-                        </div>
+                        <h5 className='mb-3'>Features</h5>
+                        <button onClick={()=>setFeatures(!features)} className='block md:hidden text-[#2194FF]'>See More</button>
+                    </div>
+                    <div className='hidden md:grid  md:grid-cols-4 md:gap-3 lg:gap-8   '>
 
-                        <div className='flex flex-col  justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={bathroom} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>Food</p>
-                        </div>
-                        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={heat_pump} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>Geyser</p>
-                        </div>
+                        {
+                            featuresAll.map(feature => feature) 
+                        }
 
-                        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={local_parking} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>AC</p>
-                        </div>
-                        <div className='flex flex-col justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
-                            <img src={soup_kitchen} alt="" className='w-[2.125rem] pt-3' />
-                            <p className='text-lg'>Parking </p>
-                        </div>
-
+                    </div>
+                    <div className='grid grid-cols-3 gap-2  md:hidden '>
+                    {features ?
+                            featuresAll.map(feature => feature) :featuresAll.slice(0,3).map(feature => feature)
+                        }
 
                     </div>
                 </div>
@@ -109,7 +131,7 @@ const Features = () => {
                         </div>
                     </div>
                 </div>
-                <div className='block md:hidden -mr-7'>
+                <div className='block md:hidden '>
 
                     <div className='bg-[#7065F0] p-1 rounded-lg text-white flex justify-between items-center  mt-9  w-fit'>
 
