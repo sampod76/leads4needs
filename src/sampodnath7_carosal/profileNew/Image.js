@@ -46,7 +46,7 @@ const Image = () => {
     return (
         <div>
 
-            <div onClick={()=>openModal()} className='md:grid grid-cols-3 gap-2 hidden '>
+            <div onClick={() => openModal()} className='md:grid grid-cols-3 gap-2 hidden '>
                 <div className=''>
                     <img src="https://images.unsplash.com/photo-1670460395275-4d5e0ddb7275?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className='h-[35rem] w-full' />
                 </div>
@@ -89,7 +89,7 @@ const Image = () => {
                 </div> */}
 
                 <Transition appear show={isOpen} as={Fragment}>
-                    <Dialog as="div" className="relative z-10" onClose={()=>closeModal()}>
+                    <Dialog as="div" className="relative z-10" onClose={() => closeModal()}>
                         <Transition.Child
                             as={Fragment}
                             enter="ease-out duration-300"
@@ -100,13 +100,13 @@ const Image = () => {
                             leaveTo="opacity-0"
                         >
 
-                            <div className="fixed inset-0 bg-black bg-opacity-75" > 
-                            
-                            <button className='absolute top-[5%] md:text-5xl text-lg left-[5%] border-2 rounded-lg md:px-4 px-2 text-white'>X</button>
+                            <div className="fixed inset-0 bg-black bg-opacity-75" >
+
+                                <button className='absolute top-[5%] md:text-5xl text-lg left-[5%] border-2 rounded-lg md:px-4 px-2 text-white'>X</button>
                             </div>
                         </Transition.Child>
 
-                        <div className="fixed inset-0 overflow-y-auto container mx-auto">
+                        <div className="fixed inset-0 overflow-y-auto ">
                             <div className="flex min-h-full items-center justify-center p-4 text-center">
 
                                 <Transition.Child
@@ -120,7 +120,7 @@ const Image = () => {
                                 >
                                     <Dialog.Panel className=" w-full  transform overflow-hidden rounded-2xl  p-6 text-left align-middle shadow-xl transition-all">
 
-                                    <SliderTogle></SliderTogle>
+                                        <SliderTogle></SliderTogle>
                                     </Dialog.Panel>
                                 </Transition.Child>
                             </div>
