@@ -14,6 +14,7 @@ import Slider from 'react-slick';
 import Modal from 'react-modal';
 import Emoji from './Emoji/Emoji';
 import './Emoji/Emoji.css'
+import './Carosel.css'
 import { toast, Toaster } from 'react-hot-toast';
 const customStyles = {
     content: {
@@ -37,10 +38,10 @@ const Main2 = () => {
 
         infinite: true,
         speed: 500,
-        slidesToShow: 1.5,
-        slidesToScroll: 1.5,
+        slidesToShow: 1.8,
+        slidesToScroll: 1.2,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 800,
         responsive: [
             {
                 breakpoint: 765,
@@ -87,22 +88,22 @@ const Main2 = () => {
 
                 <Slider {...settings}>
                     <div className=" ">
-                        <img src="https://images.unsplash.com/photo-1670968982569-722c875727dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className="w-full h-[25rem] sm:h-[30rem]    " />
+                        <img src="https://images.unsplash.com/photo-1670968982569-722c875727dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className="  min-w-full h-[25rem] sm:h-[30rem]    " />
                     </div>
                     <div className=" ">
-                        <img src="https://images.unsplash.com/photo-1664574653006-4d7eb5f1a418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60" alt="" className="w-full h-[25rem] sm:h-[30rem]    " />
+                        <img src="https://images.unsplash.com/photo-1664574653006-4d7eb5f1a418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60" alt="" className=" min-w-full h-[25rem] sm:h-[30rem]    " />
                     </div>
                     <div className=" ">
-                        <img src="https://plus.unsplash.com/premium_photo-1661484952533-83719b54ca6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className="w-full h-[25rem] sm:h-[30rem]    " />
+                        <img src="https://plus.unsplash.com/premium_photo-1661484952533-83719b54ca6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className=" min-w-full h-[25rem] sm:h-[30rem]    " />
                     </div>
                     <div className=" ">
-                        <img src="https://images.unsplash.com/photo-1670942298778-f339cac1fe01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className="w-full h-[25rem] sm:h-[30rem]    " />
+                        <img src="https://images.unsplash.com/photo-1670942298778-f339cac1fe01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className=" min-w-full h-[25rem] sm:h-[30rem]    " />
                     </div>
                     <div className=" ">
-                        <img src="https://images.unsplash.com/photo-1664575196044-195f135295df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className="w-full h-[25rem] sm:h-[30rem]    " />
+                        <img src="https://images.unsplash.com/photo-1664575196044-195f135295df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className=" min-w-full h-[25rem] sm:h-[30rem]    " />
                     </div>
                     <div className=" ">
-                        <img src="https://images.unsplash.com/photo-1670969548019-18ec1aae8abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className="w-full h-[25rem] sm:h-[30rem]    rounded-xl" />
+                        <img src="https://images.unsplash.com/photo-1670969548019-18ec1aae8abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="" className=" min-w-full h-[25rem] sm:h-[30rem]    rounded-xl" />
                     </div>
                 </Slider>
                 <div className='absolute right-[5%] top-[2%] md:hidden'>

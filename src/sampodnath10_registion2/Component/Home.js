@@ -21,11 +21,26 @@ const Home = () => {
 
                 </div>
                 <div className=' font-semibold w-full '>
-                    <h1 className='md:text-3xl font-bold text-black mb-4'>Add PG</h1>
+                    <h1 className='md:text-3xl font-bold text-black mb-4'>Registration</h1>
                     <form className=' flex flex-col gap-3 ' >
                         <div className='flex flex-col   '>
 
-                            <label className='mb-1'>PG Name</label>
+                            <label className='mb-1'>Business/Shop Name</label>
+                            <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="text" name="" id="" />
+                        </div>
+                        <div className='flex flex-col   '>
+
+                            <label className='mb-1'>Business Owner Name</label>
+                            <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="text" name="" id="" />
+                        </div>
+                        <div className='flex flex-col   '>
+
+                            <label className='mb-1'>Business/Shop Address</label>
+                            <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="text" name="" id="" />
+                        </div>
+                        <div className='flex flex-col   '>
+
+                            <label className='mb-1'>City</label>
                             <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="text" name="" id="" />
                         </div>
                         <div className='flex flex-col   '>
@@ -35,76 +50,13 @@ const Home = () => {
                         </div>
                         <div className='flex flex-col   '>
 
-                            <label className='mb-1'>PG Address</label>
-                            <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="text" name="" id="" />
+                            <label className='mb-1'>Email</label>
+                            <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="email" name="" id="" />
                         </div>
                         <div className='flex flex-col   '>
 
-                            <label className='mb-1'>City</label>
+                            <label className='mb-1'>Business Category</label>
                             <input className='focus:outline focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2' type="text" name="" id="" />
-                        </div>
-
-                        <div className=''>
-                            <h1 className='mb-1 text-lg'>Gender</h1>
-                            <div className='flex justify-around gap-2 md:gap-10 sm:text-lg'>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center  sm:p-2 border-2 w-full h-full space-x-2'>
-                                    <input type="radio" name="gander" id="Male" className='redioButton' />
-                                    <label htmlFor="Male">Male</label>
-                                </div>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center  sm:p-2 border-2 w-full h-full space-x-2'>
-                                    <input type="radio" name="gander" id="Female" className='' />
-                                    <label htmlFor="Female">Female</label>
-                                </div>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center  sm:p-2 border-2 w-full h-full space-x-2'>
-                                    <input type="radio" name="gander" id="Unisex" className='' />
-                                    <label htmlFor="Unisex">Unisex</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=''>
-                            <h1 className='mb-1 text-lg'>Types of Room Sharing</h1>
-                            <div className='grid grid-cols-2 sm:grid-cols-4 gap-2 lg:gap-6 md:text-lg '>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center smm:p-1 border-2 w-full h-full space-x-2 '>
-                                    <input onClick={()=>setRoomSelect(1)} type="radio" name="room" id="1"  className='' />
-                                    <label htmlFor="1">1 room</label>
-                                </div>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center sm:p-2 border-2 w-full h-full space-x-2'>
-                                    <input onClick={()=>setRoomSelect(2)} type="radio" name="room" id="2" className='' />
-                                    <label htmlFor="2">2 room</label>
-                                </div>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center sm:p-2 border-2 w-full h-full space-x-2'>
-                                    <input onClick={()=>setRoomSelect(3)} type="radio" name="room" id="3" className='' />
-                                    <label htmlFor="3">3 room</label>
-                                </div>
-                                <div className='focus:outline focus:outline-sky-600 rounded-lg text-center sm:p-2 border-2 w-full h-full space-x-2'>
-                                    <input onClick={()=>setRoomSelect(4)} type="radio" name="room" id="4" className='' />
-                                    <label htmlFor="4">4 room</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className=''>
-                            <h1 className='my-2 font-bold text-lg'>Room Sharing Price</h1>
-                            <hr />
-
-                            <div className='grid grid-cols-2 gap-3 mt-1'>
-                                <div >
-                                    <h1 className='text-lg' >Single Room Price</h1>
-                                    <input type="text" name="" id="" className=' focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2  w-full disabled:bg-slate-200' disabled={roomSelect !== 1} />
-                                </div>
-                                <div className=''>
-                                    <h1 className='text-lg'>Double Room Price</h1>
-                                    <input type="text" name="" id="" className=' focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2  w-full disabled:bg-slate-200 ' disabled={roomSelect !== 2} />
-                                </div>
-                                <div className=''>
-                                    <h1 className='text-lg'>Triple Room Price</h1>
-                                    <input type="text" name="" id="" className=' focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2  w-full disabled:bg-slate-200' disabled={roomSelect !== 3} />
-                                </div>
-                                <div className=''>
-                                    <h1 className='text-lg'>Four Room Price</h1>
-                                    <input type="text" name="" id="" className=' focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2  w-full disabled:bg-slate-200' disabled={roomSelect !== 4} />
-                                </div>
-                            </div>
                         </div>
                         <div>
                             <h4 className='text-xl'>Add Tag</h4>
@@ -116,6 +68,26 @@ const Home = () => {
                                 placeHolder="enter fruits"
                             />
                         </div>
+                      
+                    
+
+                        <div className=''>
+                            <h1 className='my-2 font-bold text-lg'>Business Timings</h1>
+                            <hr />
+
+                            <div className='grid grid-cols-2 gap-3 mt-1'>
+                                <div >
+                                    <h1 className='text-lg' >Opening Time</h1>
+                                    <input type="text" name="" id="" className=' focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2  w-full '  />
+                                </div>
+                                <div className=''>
+                                    <h1 className='text-lg'>Closing Time</h1>
+                                    <input type="text" name="" id="" className=' focus:outline-sky-600 border-2 rounded-lg border-gray-200 mt-1 p-2  w-full  ' />
+                                </div>
+                                
+                            </div>
+                        </div>
+                      
 
                         <div className=''>
                             <h1 className='my-2 text-lg'>Upload Images</h1>

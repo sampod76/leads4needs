@@ -37,6 +37,8 @@ import Main5 from "./sampodnath5/Main5";
 import Main7 from "./sampodnath7_carosal/Main/Main7";
 import Main9 from './sampod_9_leds_home/Main9'
 import Login from "./sampodnath8_login/Login";
+import Main10 from "./sampodnath10_registion2/Main10";
+import MainBlog from "./sampodnath11_blog/MainBlog";
 
 
 
@@ -73,6 +75,8 @@ function App() {
         <Route path='/sampod7' element={<Main7 />} />
         <Route path='/sampod8' element={<Login />} />
         <Route path='/sampod9' element={<Main9 />} />
+        <Route path='/sampod10' element={<Main10 />} />
+        <Route path='/sampod11' element={<MainBlog />} />
 
 
 
