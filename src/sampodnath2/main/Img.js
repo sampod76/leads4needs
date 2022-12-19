@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Img = () => {
     return (
         <div className='flex  gap-2 h-[22rem] md:h-[30rem]'>

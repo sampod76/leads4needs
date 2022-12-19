@@ -33,7 +33,7 @@ const Intro = () => {
 
             <div className='mt-4'>
                 <h4>Description</h4>
-                <p className='text-lg'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website.</p>
+                <p className='text-xl leading-8 font-serif'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website.</p>
             </div>
 
             <div style={{ background: `url(${Footer_Image_2})`, "height": "100%", "width": "100%", "backgroundRepeat": "no-repeat", "backgroundSize": "auto" }} className='my-2 md:p-5 px-2'  >

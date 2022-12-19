@@ -1,65 +1,53 @@
 import React from 'react';
 import { MdCall } from 'react-icons/md';
 import Ellipse from './Ima2/Ellipse-7.png'
+import Map from './Ima2/map2.png'
 
-const Leftside = () => {
+const Leftside = ({openRatingModal}) => {
     return (
         <div className='space-y-4  '>
-            <div className='md:space-y-2 space-y-1 '>
-                <h5 className=' text-black font-bold text-2xl md:text-4xl xl:text-6xl md:pt-2  '>ABC Dentist </h5>
+            <div className='space-y-2  mt-3'>
+                <h5 className=' text-black font-bold text-3xl md:text-4xl xl:text-6xl  '>ABC Dentist </h5>
                 <p className='lg:text-2xl md:tracking-wide text-gray-500 md:py-2 md:text-xl'>2685, Outram Lines, GTB Nagar, Delhi, 110009</p>
-                <p className='font-semibold md:text-xl md:py-2'>11 a.m. to 7:00 p.m.</p>
-                <div className='flex items-center '>
-                    <div className='flex mt-1 '>
+                <p className='font-semibold md:text-xl '>11 a.m. to 7:00 p.m.</p>
+                <div onClick={openRatingModal} className='flex items-center '>
+                    <div className='flex mt-1 gap-1'>
                         {/* <FcRating></FcRating>
                         <FcRating></FcRating>
                         <FcRating></FcRating>
                         <FcRating></FcRating> */}
-                        <svg className='w-3 h-full md:w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className=' h-full w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
                         </svg>
-                        <svg className='w-3 h-full md:w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
-                        </svg>
-                        <svg className='w-3 h-full md:w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
-                        </svg>
-                        <svg className='w-3 h-full md:w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
-                        </svg>
-                        <svg className='w-3 h-full md:w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
-                        </svg>
-
-
-                        <p className='md:ml-4 ml-1 md:text-xl -mt-1 md:-mt-2'>9Rate</p>
+                     
+                        <p >9.5Review</p>
                     </div>
                 </div>
             </div>
-            <div className=''>
-                <h3 className='-mt-5 text-xl'>Business Specialization</h3>
+            <div className='space-y-5'>
+                <h3 className='-mt-5 font-semibold text-3xl'>Business Specialization</h3>
                 <div className='grid grid-cols-2 gap-4 text-center'>
-                    <div className='border-2 bg-[#7065F0] text-white rounded-lg  text-base px-1 py-3 font-semibold'>
+                    <div className='border-2 bg-[#7065F0] text-white rounded-xl   text-base px-1 py-4 font-semibold'>
                         Digital Marketing
                     </div>
-                    <div className='border-2 bg-[#7065F0] text-white rounded-lg text-text-base px-1 py-3  font-semibold'>
+                    <div className='border-2 bg-[#7065F0] text-white rounded-xl  text-text-base px-1 py-4  font-semibold'>
                         Coaching Center
                     </div>
-                    <div className='border-2 bg-[#7065F0] text-white rounded-lg text-text-base px-1 py-3  font-semibold'>
+                    <div className='border-2 bg-[#7065F0] text-white rounded-xl  text-text-base px-1 py-4  font-semibold'>
                         Institiute
                     </div>
-                    <div className='border-2 bg-[#7065F0] text-white rounded-lg text-text-base px-1 py-3  font-semibold'>
+                    <div className='border-2 bg-[#7065F0] text-white rounded-xl  text-text-base px-1 py-4  font-semibold'>
                         More...
                     </div>
                 </div>
             </div>
 
             <div className='block md:hidden'>
-                <div>
+                <div className='space-y-3'>
                     <h5 className='md:text-3xl'>Owner Details</h5>
-                    <div className='flex items-center gap-2'>
-                        <img src={Ellipse} alt="" className='w-18' />
-                        <div className='space-y-[-0.7125rem]'>
+                    <div className='flex items-center gap-3'>
+                        <img src={Ellipse} alt="" className='w-20' />
+                        <div className='space-y-[-0.4125rem]'>
                         <p className='text-lg font-semibold'>Alana Rey</p> 
                         <p className=''>Owner 9876543210</p>
                         </div>
@@ -73,9 +61,14 @@ const Leftside = () => {
                     </svg> <p className='md:text-3xl text-2xl text-center mt-2 '>Call Now</p></div>
                 </div>
             </div>
-            <div className='leading-6'>
-                <h3>Description</h3>
-                <p className='text-lg md:text-xl text-gray-500'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website.</p>
+            <div className='space-y-4'>
+                <h3 className='font-semibold text-3xl'>Description :</h3>
+                <p className='text-lg md:text-3xl font-normal'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website. </p>
+            </div>
+
+            <div className='space-y-5 block md:hidden '>
+                <h3>Map</h3>
+                <img src={Map} alt="" className='h-[20rem] w-full' />
             </div>
 
             {/* <div>

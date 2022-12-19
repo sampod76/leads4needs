@@ -19,21 +19,21 @@ const Rightside = () => {
                 <SiTelegram className='w-10  h-10 ' ></SiTelegram>
             </div>
 
-            <div className=''>
+            <div className='space-y-5'>
                 <h3>Map</h3>
-                <img src={Map} alt="" className='h-[15rem] w-full' />
+                <img src={Map} alt="" className='h-[20rem] md:h-[30rem] w-full' />
             </div>
             <div className='mt-10'>
-                <p><span className='text-red-500'>Map Location:</span> If PG location is not pined on exact point then it means PG location is pinned on nearest yuo </p>
+                <p className='text-xl md:text-2xl font-semibold'><span className='text-red-500 '>Map Location:</span> If PG location is not pined on exact point then it means PG location is pinned on nearest yuo </p>
             </div>
             <div>
-                <div className='hidden md:block'>
-                    <h5 className='md:text-3xl'>Owner Details</h5>
-                    <div className='flex items-center gap-2'>
+                <div className='hidden md:block '>
+                    <h5 className='md:text-3xl '>Owner Details</h5>
+                    <div className='flex items-center gap-2 '>
                         <img src={Ellipse} alt="" className='w-20' />
-                        <div className='space-y-[-0.7125rem]'>
-                            <p className='text-lg font-semibold'>Alana Rey</p>
-                            <p className=''>Owner 9876543210</p>
+                        <div className='space-y-[-0.3125rem]'>
+                            <p className='text-2xl font-semibold'>Alana Rey</p>
+                            <p className='text-lg'>Owner 9876543210</p>
                         </div>
                     </div>
                 </div>

@@ -14,10 +14,10 @@ const Features = () => {
 
 
         <div className='flex flex-col justify-between gap-2 md:gap-x-5  rounded-5xl '>
-            <div>
+            <div className=''>
 
                 <div className='flex justify-between   -mt-4 '>
-                    <div className='md:space-y-4'>
+                    <div className='md:space-y-4 '>
                         <p className=' text-black font-bold lg:text-3xl text-2xl '>Birdhouse PG (Boys)</p>
                         <p className='md:text-lg -mt-2'>2685, Outram Lines, GTB Nagar, Delhi, 110009</p>
 
@@ -52,7 +52,7 @@ const Features = () => {
                         </button>
                     </div>
                 </div>
-                <div className='md:my-2 -mr-8 md:mr-1'>
+                <div className='md:my-2 -mr-8 md:mr-1 '>
                     <h5 className='mb-3'>Features</h5>
                     <div className=' grid grid-cols-4  gap-4 '>
                         <div className='flex flex-col  justify-center items-center border-2  rounded-2xl w-full  xl:h-[8rem]'>
@@ -98,7 +98,7 @@ const Features = () => {
 
 
             <div className='flex items-center justify-between md:mt-12 xl:mt-16 py-2'>
-                <div>
+                <div className='space-y-4'>
 
                     <h5 className='font-semibold mt-2 md:mt-5 space-y-2  md:text-2xl'>PG Agent</h5>
                     <div className='flex  space-x-2' >

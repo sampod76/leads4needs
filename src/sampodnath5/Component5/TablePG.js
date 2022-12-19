@@ -40,7 +40,7 @@ const TablePG = () => {
                     <h2>286 users</h2>
                     <button onClick={openModal} className='px-4 py-2 rounded-xl bg-blue-600 text-white'>Add Role</button>
                 </div>
-                <div class="md:w-full mx-auto">
+                <div class="md:w-full mx-auto  ">
 
                     <div class="flex flex-col rounded-lg border-2">
                         <div class="overflow-x-auto shadow-md sm:rounded-lg">

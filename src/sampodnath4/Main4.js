@@ -7,8 +7,10 @@ const Main4 = () => {
     return (
 
         <div className="container mx-auto p-3  ">
-            <Navber></Navber>
-            <Home></Home>
+            <div>
+                <Navber></Navber>
+                <Home></Home>
+            </div>
         </div>
 
     );

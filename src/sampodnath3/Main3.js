@@ -1,8 +1,4 @@
 
-import { BsArrowRight } from 'react-icons/bs';
-import Footer_Image_2 from '../sampodnath3/Img/Footer_Image_2.png'
-import Mail from '../sampodnath3/Img/Mail.png'
-import My_Location from '../sampodnath3/Img/My_Location.png'
 import '../sampodnath3/card.css'
 import { Menu, Transition } from '@headlessui/react'
 import Slider from '@material-ui/core/Slider';
@@ -11,8 +7,12 @@ import { IoIosMan } from "react-icons/io";
 
 // import { TfiSharethis } from 'react-icons/tfi';
 
-import { Fragment, useEffect, useRef, useState } from 'react'
-import Footer from './Footer';
+import { Fragment, useEffect, useRef, useState } from 'react';
+import Footer from '../Footer/Footer';
+import { BsArrowRight } from 'react-icons/bs';
+import My_Location from './Img/My_Location.png'
+import Mail from './Img/Mail.png'
+
 // import { ChevronDownIcon, EditActiveIcon, DuplicateInactiveIcon, EditInactiveIcon } from '@heroicons/react/20/solid'
 // import { FaMale } from "react-icons/fa";
 // import { BsThreeDots } from "react-icons/bs";
@@ -34,38 +34,10 @@ const Main3 = () => {
         <main className=' bg-[#F7F7FD]'>
             <section className='container mx-auto p-3 min-h-screen '>
 
-                <h1 className='font-bold md:text-3xl text-2xl my-4'>Search Properties to Rent</h1>
-                <div className='grid grid-cols-12 gap-3 bg-white rounded-xl p-3 font-bold'>
+                <h1 className='font-bold md:text-3xl text-2xl my-4 '>Search Properties to Rent</h1>
+                <div className='grid grid-cols-12 gap-3 bg-white rounded-xl p-3 font-bold w-full'>
                     <input type="search" name="" id="" placeholder='Search' className='lgg:col-span-5 md:col-span-5 col-span-full px-3 p-3 md:p-0 focus:outline-none border-1 rounded-lg border-gray-200  ' />
-                    {/* <Menu as="div" className=" inline-block text-left">
-                            <div>
-                                <Menu.Button className="inline-flex w-full justify-center rounded-md   p-3 text-sm font-medium text-gray-700   ">
-                                    <h1>gander</h1>
 
-                                </Menu.Button>
-                            </div>
-
-                            <Transition
-                                as={Fragment}
-                                enter="transition ease-out duration-100"
-                                enterFrom="transform opacity-0 scale-95"
-                                enterTo="transform opacity-100 scale-100"
-                                leave="transition ease-in duration-75"
-                                leaveFrom="transform opacity-100 scale-100"
-                                leaveTo="transform opacity-0 scale-95"
-                            >
-                                <Menu.Items className="">
-                                    <div className="py-1 space-y-1 text-white cursor-pointer ">
-
-                                        <Menu.Item>
-                                            {({ active }) => <li>mail</li>}
-                                        </Menu.Item>
-
-
-                                    </div>
-                                </Menu.Items>
-                            </Transition>
-                        </Menu> */}
 
                     <div className='lggg:col-span-4 lg:col-span-3 md:col-span-4 col-span-7 w-[110%] md:w-[120%] lg:w-[100%] flex justify-between space-y-2 '>
                         <div className='flex flex-col  w-full md:w-10/12 text-[#878787]
@@ -161,14 +133,14 @@ const Main3 = () => {
 
 
 
-                    <div className='card relative w-full  mx-auto shadow-lg  '>
+                    <div className='card  w-full  mx-auto shadow-lg  '>
 
-                        <div className='h-[55%] lg:h-[50%] xl:h-[50%] '>
+                        <div className='h-[50%]  '>
 
                             <img src="https://images.unsplash.com/photo-1670605106692-aaedff8716d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="object-cover object-center  w-full rounded-t-3xl h-full " />
                         </div>
 
-                        <div className='p-3'>
+                        <div className='p-3 relative'>
 
                             <div className="flex flex-col justify-between  space-y-2">
                                 <div className="space-y-4 md:space-y-2">
@@ -204,17 +176,19 @@ const Main3 = () => {
 
                                 </div>
                             </div>
+                            <i className='top-[-9%] absolute'><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                         </div>
-                        <i className='top-[47%] sm:top-[47%] md:top-[41%] mdd:top-[42%]  lgg:top-[48%] lggg:top-[43%] '><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                     </div>
-                    <div className='card relative w-full  mx-auto shadow-lg  '>
+                    
 
-                        <div className='h-[55%] lg:h-[50%] xl:h-[50%] '>
+                    <div className='card  w-full  mx-auto shadow-lg  '>
+
+                        <div className='h-[50%]  '>
 
                             <img src="https://images.unsplash.com/photo-1670605106692-aaedff8716d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="object-cover object-center  w-full rounded-t-3xl h-full " />
                         </div>
 
-                        <div className='p-3'>
+                        <div className='p-3 relative'>
 
                             <div className="flex flex-col justify-between  space-y-2">
                                 <div className="space-y-4 md:space-y-2">
@@ -250,17 +224,18 @@ const Main3 = () => {
 
                                 </div>
                             </div>
+                            <i className='top-[-9%] absolute'><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                         </div>
-                        <i className='top-[47%] sm:top-[47%] md:top-[41%] mdd:top-[42%]  lgg:top-[48%] lggg:top-[43%] '><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                     </div>
-                    <div className='card relative w-full  mx-auto shadow-lg  '>
 
-                        <div className='h-[55%] lg:h-[50%] xl:h-[50%] '>
+                    <div className='card  w-full  mx-auto shadow-lg  '>
+
+                        <div className='h-[50%]  '>
 
                             <img src="https://images.unsplash.com/photo-1670605106692-aaedff8716d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="object-cover object-center  w-full rounded-t-3xl h-full " />
                         </div>
 
-                        <div className='p-3'>
+                        <div className='p-3 relative'>
 
                             <div className="flex flex-col justify-between  space-y-2">
                                 <div className="space-y-4 md:space-y-2">
@@ -296,17 +271,18 @@ const Main3 = () => {
 
                                 </div>
                             </div>
+                            <i className='top-[-9%] absolute'><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                         </div>
-                        <i className='top-[47%] sm:top-[47%] md:top-[41%] mdd:top-[42%]  lgg:top-[48%] lggg:top-[43%] '><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                     </div>
-                    <div className='card relative w-full  mx-auto shadow-lg  '>
 
-                        <div className='h-[55%] lg:h-[50%] xl:h-[50%] '>
+                    <div className='card  w-full  mx-auto shadow-lg  '>
+
+                        <div className='h-[50%]  '>
 
                             <img src="https://images.unsplash.com/photo-1670605106692-aaedff8716d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="object-cover object-center  w-full rounded-t-3xl h-full " />
                         </div>
 
-                        <div className='p-3'>
+                        <div className='p-3 relative'>
 
                             <div className="flex flex-col justify-between  space-y-2">
                                 <div className="space-y-4 md:space-y-2">
@@ -342,17 +318,18 @@ const Main3 = () => {
 
                                 </div>
                             </div>
+                            <i className='top-[-9%] absolute'><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                         </div>
-                        <i className='top-[47%] sm:top-[47%] md:top-[41%] mdd:top-[42%]  lgg:top-[48%] lggg:top-[43%] '><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                     </div>
-                    <div className='card relative w-full  mx-auto shadow-lg  '>
 
-                        <div className='h-[55%] lg:h-[50%] xl:h-[50%] '>
+                    <div className='card  w-full  mx-auto shadow-lg  '>
+
+                        <div className='h-[50%]  '>
 
                             <img src="https://images.unsplash.com/photo-1670605106692-aaedff8716d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="object-cover object-center  w-full rounded-t-3xl h-full " />
                         </div>
 
-                        <div className='p-3'>
+                        <div className='p-3 relative'>
 
                             <div className="flex flex-col justify-between  space-y-2">
                                 <div className="space-y-4 md:space-y-2">
@@ -388,17 +365,18 @@ const Main3 = () => {
 
                                 </div>
                             </div>
+                            <i className='top-[-9%] absolute'><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                         </div>
-                        <i className='top-[47%] sm:top-[47%] md:top-[41%] mdd:top-[42%]  lgg:top-[48%] lggg:top-[43%] '><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                     </div>
-                    <div className='card relative w-full  mx-auto shadow-lg  '>
 
-                        <div className='h-[55%] lg:h-[50%] xl:h-[50%] '>
+                    <div className='card  w-full  mx-auto shadow-lg  '>
+
+                        <div className='h-[50%]  '>
 
                             <img src="https://images.unsplash.com/photo-1670605106692-aaedff8716d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="object-cover object-center  w-full rounded-t-3xl h-full " />
                         </div>
 
-                        <div className='p-3'>
+                        <div className='p-3 relative'>
 
                             <div className="flex flex-col justify-between  space-y-2">
                                 <div className="space-y-4 md:space-y-2">
@@ -434,8 +412,8 @@ const Main3 = () => {
 
                                 </div>
                             </div>
+                            <i className='top-[-9%] absolute'><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                         </div>
-                        <i className='top-[47%] sm:top-[47%] md:top-[41%] mdd:top-[42%]  lgg:top-[48%] lggg:top-[43%] '><div className='flex ml-8'><IoIosMan className='text-2xl text-white mt-[11.8px]'></IoIosMan> <h4 className='text-2xl font-bold text-white text-center mt-2 ml-2'>MALE</h4> </div> </i>
                     </div>
 
 
@@ -443,10 +421,65 @@ const Main3 = () => {
                 </div>
 
             </section>
-            <div className='bg-[#7065F0] w-full'>
+            {/* <div className='bg-[#7065F0] w-full'>
+                <div className='bg-[#7065F0] relative max-w-[1440px] mx-auto '  >
+                    <div className='bg-[#7065F0] h-[23rem] smm:h-[25rem] md:h-[18rem] mdd:h-[20rem]  lg:h-[20.75rem] lgg:h-80 absolute w-full  top-0 mx-auto z-5 '>
+                        <h1 className='lgg:text-[17rem] lg:text-[15.625rem] mdd:text-[12.375rem]  flex justify-center  md:text-[12rem] smm:text-[10rem] text-[5rem] font-extrabold text-[#776DF1] mt-28 md:-mt-8 '>PG Wars</h1>
+                    </div>
 
-                <Footer></Footer>
-            </div>
+                    <div className=' absolute z-10   w-full pt-4 px-2 md:px-0'>
+                        <div className=' md:flex justify-between md:p-4 p-2  md:pt-10 text-white space-x-5'>
+
+                            <div className='text-white space-y-1 md:ml-[3rem] md:w-[30%] mdd:w-[25%] ml-4 '>
+                                <p className='font-bold text-xl'>PG Wars</p>
+                                <div className='flex md:block items-center '>
+                                    <p className='text-xl md:text-2xl font-light  '>Easiest way <br className='hidden md:block' /> to find yourself a <span className='md:text-3xl text-lg font-bold'>PG</span>.</p>
+                                </div>
+                                <h5 className='flex items-center bg-white  px-2 py-2 text-[#7065F0] md:px-2 rounded-lg md:mt-4 w-fit text-sm'>FREE REGISTER <span><BsArrowRight className='w-5'></BsArrowRight></span></h5>
+                            </div>
+                            <div className='flex w-full  md:justify-around justify-between  lg:gap-5 md:mt-[1.875rem] mt-6 text-[10px] sm:text-[15px] md:text-[10px] md:text-lg '>
+                                <div className='space-y-2'>
+                                    <h6 className='underline '>Services</h6>
+                                    <p>Blog</p>
+                                    <p>Feedback</p>
+                                    <p>Report</p>
+                                </div>
+                                <div className='space-y-2'>
+                                    <h6 className='underline '>Links</h6>
+                                    <p>About Us</p>
+                                    <p>Privacy Policy</p>
+                                    <p>Terms & Conditions</p>
+                                    <p>Disclaimer</p>
+                                </div>
+                                <div className='mr-6'>
+                                    <h6 className='underline '>Contact Us</h6>
+                                    <div className='flex  gap-2'>
+                                        <img src={My_Location} alt="" className='h-4 w-5 mt-1' />
+                                        <p className=''> Sector 63, H-Block,
+                                            Noida</p>
+                                    </div>
+
+                                    <div className='flex  gap-2'>
+
+                                        <img src={Mail} alt="" className='h-4 w-5 mt-1' />
+                                        <p className=''>contact@codeexampler.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div className='w-[92%] mx-auto pb-2 -mt-4 md:-mt-2'>
+
+                            <hr className='bg-white' />
+                            <p className='text-white text-start smm:text-xs ml-2 md:ml-9 lg:ml-2 text-[8px] md:text-lg'>2022 CodeExampler | Designed By CodeExampler.com | All Right Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> */}
+            {/* <Footer></Footer> */}
         </main>
 
     );

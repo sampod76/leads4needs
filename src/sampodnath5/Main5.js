@@ -8,12 +8,15 @@ import RouterNav from './Routing/Page/RouterNav';
 
 const Main5 = () => {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto p-3'>
+            <div>
 
-            <Navber></Navber>
-            <RouterNav></RouterNav>
-            <Table></Table>
-            {/* <TablePG></TablePG> */}
+                <Navber></Navber>
+                <RouterNav></RouterNav>
+                {/* <Table></Table> */}
+                <TablePG></TablePG>
+            </div>
+
 
         </div>
     );

@@ -10,10 +10,12 @@ import "./card.css";
 import { BsFillPencilFill } from "react-icons/bs";
 import { IoIosMan } from "react-icons/io";
 
-const Card = () => {
+const Card = ({openRatingModal}) => {
   return (
     <>
-      {/* <div className="card card-compact rounded-t-lg my-3 bg-base-100 shadow-xl relative designCard w-80 lg:w-96   mx-auto ">
+      <>
+
+        {/* <div className="card card-compact rounded-t-lg my-3 bg-base-100 shadow-xl relative designCard w-80 lg:w-96   mx-auto ">
         <i className="text-white font-bold flex justify-center items-center text-2xl">
           {" "}
           <span className=" mr-2">3</span>{" "}
@@ -36,7 +38,7 @@ const Card = () => {
         </figure>
         <div className="card-body">
           <h1 className="text-sm text-indigo-600 font-bold">Dentist</h1>
-          <h2 className="card-title font-bold">Shoes!</h2>
+          <h2 className="text-xl font-bold">Shoes!</h2>
           <div className="flex justify-between items-center">
             <p className=" text-gray-600">
               Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
@@ -74,22 +76,26 @@ const Card = () => {
           </div>
         </div>
       </div> */}
+      </>
 
-      <div className='card relative w-80 md:w-full mx-auto shadow-lg '>
+      <div className='card w-80 sm:w-96 md:w-full mx-auto shadow-lg '>
 
         <div className='h-[50%] '>
           <img src="https://placeimg.com/400/225/arch" alt="" className="object-cover object-center  w-full rounded-t-2xl h-full " />
         </div>
-        <div className="p-3 mt-2">
+        <div className="p-3 mt-2 relative">
           <h1 className="text-sm text-indigo-600 font-bold">Dentist</h1>
-          <h2 className="card-title font-bold">Shoes!</h2>
-          <div className="flex justify-between items-center">
-            <p className=" text-gray-600">
-              Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
-              Mumbai, Maharashtra 400614
-            </p>
-            <BsFillPencilFill className="text-3xl "></BsFillPencilFill>
+          <div className="flex justify-between ">
+
+            <h2 className="text-xl font-bold">Shoes!</h2>
+            <p className="border-2 rounded-full p-2 absolute top-2 right-2"><BsFillPencilFill className="text-xl"></BsFillPencilFill></p>
           </div>
+
+          <p className=" text-gray-600">
+            Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
+            Mumbai, Maharashtra 400614
+          </p>
+
           <hr className="-mt-2" />
           <div className="flex justify-between -mt-2">
             <div className="flex items-center gap-2">
@@ -115,31 +121,35 @@ const Card = () => {
 42 -29 57 -36 37 -18 59 55 67 8 1 12 -14 12 -43z"/>
                 </g>
               </svg>
-              <span>Pending</span>
+              <span className="text-xs md:text-base">Pending</span>
             </div>
           </div>
+          <i className='top-[-17%] cursor-pointer' onClick={openRatingModal} ><div className='flex ml-2'><span className="text-3xl mt-2 ml-3 text-white">3</span><FontAwesomeIcon
+            icon={faStar}
+            className="text-yellow-500 mx-2 text-3xl mt-2"
+          ></FontAwesomeIcon>  <h4 className='text-2xl font-bold text-white text-center mt-2'>Stars</h4> </div> </i>
         </div>
 
-        <i className='top-[45%] md:top-[42%] lg:top-[39%] lgg:top-[39%] lggg:top-[42%] '><div className='flex ml-2'><span className="text-3xl mt-2 ml-3 text-white">3</span><FontAwesomeIcon
-          icon={faStar}
-          className="text-yellow-500 mx-2 text-3xl mt-2"
-        ></FontAwesomeIcon>  <h4 className='text-2xl font-bold text-white text-center mt-2'>Stars</h4> </div> </i>
       </div>
-      <div className='card relative w-80 md:w-full mx-auto shadow-lg '>
+      <div className='card  w-80 sm:w-96 md:w-full mx-auto shadow-lg '>
 
         <div className='h-[50%] '>
           <img src="https://placeimg.com/400/225/arch" alt="" className="object-cover object-center  w-full rounded-t-2xl h-full " />
         </div>
-        <div className="p-3 mt-2">
-          <h1 className="text-sm text-indigo-600 font-bold">Dentist</h1>
-          <h2 className="card-title font-bold">Shoes!</h2>
-          <div className="flex justify-between items-center">
-            <p className=" text-gray-600">
-              Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
-              Mumbai, Maharashtra 400614
-            </p>
-            <BsFillPencilFill className="text-3xl "></BsFillPencilFill>
+        <div className="p-3 mt-2 relative">
+          <h6 className="text-sm text-indigo-600 font-bold">Dentist</h6>
+          <div className="flex justify-between ">
+
+            <h2 className="text-xl font-bold">Shoes!</h2>
+            <p className="border-2 rounded-full p-2 absolute top-2 right-2"><BsFillPencilFill className="text-xl"></BsFillPencilFill></p>
           </div>
+
+          <p className=" text-gray-600 ">
+            Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
+            Mumbai, Maharashtra 400614
+          </p>
+
+
           <hr className="-mt-1" />
           <div className="flex justify-between mt-2">
             <div className="flex items-center gap-2">
@@ -160,28 +170,32 @@ const Card = () => {
               </div>
             </div>
           </div>
+          <i className='top-[-17%] cursor-pointer' onClick={openRatingModal} ><div className='flex ml-2'><span className="text-3xl mt-2 ml-3 text-white">3</span><FontAwesomeIcon
+            icon={faStar}
+            className="text-yellow-500 mx-2 text-3xl mt-2"
+          ></FontAwesomeIcon>  <h4 className='text-2xl font-bold text-white text-center mt-2'>Stars</h4> </div> </i>
         </div>
 
-        <i className='top-[45%] md:top-[42%] lg:top-[39%] lgg:top-[39%] lggg:top-[42%] '><div className='flex ml-2'><span className="text-3xl mt-2 ml-3 text-white">3</span><FontAwesomeIcon
-          icon={faStar}
-          className="text-yellow-500 mx-2 text-3xl mt-2"
-        ></FontAwesomeIcon>  <h4 className='text-2xl font-bold text-white text-center mt-2'>Stars</h4> </div> </i>
+
       </div>
-      <div className='card relative w-80 md:w-full mx-auto shadow-lg '>
+      <div className='card  w-80 sm:w-96 md:w-full mx-auto shadow-lg '>
 
         <div className='h-[50%] '>
           <img src="https://placeimg.com/400/225/arch" alt="" className="object-cover object-center  w-full rounded-t-2xl h-full " />
         </div>
-        <div className="p-3 mt-2">
+        <div className="p-3 mt-2 relative">
           <h1 className="text-sm text-indigo-600 font-bold">Dentist</h1>
-          <h2 className="card-title font-bold">Shoes!</h2>
-          <div className="flex justify-between items-center">
-            <p className=" text-gray-600">
-              Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
-              Mumbai, Maharashtra 400614
-            </p>
-            <BsFillPencilFill className="text-3xl "></BsFillPencilFill>
+          <div className="flex justify-between ">
+
+            <h2 className="text-xl font-bold">Shoes!</h2>
+            <p className="border-2 rounded-full p-2 absolute top-2 right-2"><BsFillPencilFill className="text-xl"></BsFillPencilFill></p>
           </div>
+
+          <p className=" text-gray-600">
+            Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
+            Mumbai, Maharashtra 400614
+          </p>
+
           <hr className="-mt-1" />
           <div className="flex justify-between mt-2">
             <div className="flex items-center gap-2">
@@ -202,15 +216,16 @@ const Card = () => {
               </div>
             </div>
           </div>
+          <i className='top-[-17%] cursor-pointer' onClick={openRatingModal} ><div className='flex ml-2'><span className="text-3xl mt-2 ml-3 text-white">3</span><FontAwesomeIcon
+            icon={faStar}
+            className="text-yellow-500 mx-2 text-3xl mt-2"
+          ></FontAwesomeIcon>  <h4 className='text-2xl font-bold text-white text-center mt-2'>Stars</h4> </div> </i>
         </div>
 
-        <i className='top-[45%] md:top-[42%] lg:top-[39%] lgg:top-[39%] lggg:top-[42%] '><div className='flex ml-2'><span className="text-3xl mt-2 ml-3 text-white">3</span><FontAwesomeIcon
-          icon={faStar}
-          className="text-yellow-500 mx-2 text-3xl mt-2"
-        ></FontAwesomeIcon>  <h4 className='text-2xl font-bold text-white text-center mt-2'>Stars</h4> </div> </i>
+
       </div>
 
-      <div>
+      <>
         {/* <div className="card card-compact rounded-t-lg my-3 bg-base-100 w-80 lg:w-96  mx-auto shadow-xl designCard">
         <i className="text-white font-bold flex justify-center items-center text-2xl">
           {" "}
@@ -234,7 +249,7 @@ const Card = () => {
         </figure>
         <div className="card-body">
           <h1 className="text-sm text-indigo-600 font-bold">Dentist</h1>
-          <h2 className="card-title font-bold">Shoes!</h2>
+          <h2 className="text-xl font-bold">Shoes!</h2>
           <p className=" text-gray-600">
             Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
             Mumbai, Maharashtra 400614
@@ -281,7 +296,7 @@ const Card = () => {
         </figure>
         <div className="card-body">
           <h1 className="text-sm text-indigo-600 font-bold">Dentist</h1>
-          <h2 className="card-title font-bold">Shoes!</h2>
+          <h2 className="text-xl font-bold">Shoes!</h2>
           <p className=" text-gray-600">
             Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
             Mumbai, Maharashtra 400614
@@ -305,7 +320,7 @@ const Card = () => {
           </div>
         </div>
       </div> */}
-      </div>
+      </>
 
 
 
