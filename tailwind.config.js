@@ -14,6 +14,9 @@ module.exports = {
         xl: '1440px',
       
       },
+      fontFamily: {
+        'Lora': ['"Lora"', 'serif'],
+      },
     },
   },
   plugins: [],

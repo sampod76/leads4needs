@@ -1,20 +1,21 @@
 import React from 'react';
+import googlemybusiness from './Img/google-my-business (1).png'
 
 const Blog = () => {
     return (
-        <section className=''>
+        <section className='font-Lora'>
             {/* blog 1 */}
             <div >
                 <div className='bg-[#45E0A8]'>
 
                     <div className='flex justify-between items-center  max-w-[1440px] mx-auto px-5 py-3'>
-                        <div className='w-[60%]'>
+                        <div className=''>
                             <h6>Advanced SEO /Local SEO</h6>
-                            <h1 className='text-5xl'>Google My Business: A <br />Guide to Google <br /> Business Profile</h1>
+                            <h1 className='text-xl smm:text-3xl mdd:text-6xl lgg:text-7xl'>Google My Business: A <br />Guide to Google <br /> Business Profile</h1>
 
                         </div>
                         <div>
-                            <img src="https://static.semrush.com/blog/uploads/media/9a/af/9aafcbea5103f22bb93dc377a0b26250/google-my-business.svg" alt="" className='w-96' />
+                            <img src={googlemybusiness} alt="" className='w-60 h-40 lg:w-96 lg:h-full ' />
                         </div>
                     </div>
                 </div>
