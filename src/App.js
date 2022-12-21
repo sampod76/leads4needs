@@ -31,7 +31,7 @@ import Mcd from './componenets/Layout/Mcd'
 import Main from "./sampodnath/Main/Main";
 import Main2 from "./sampodnath2/main/Main2";
 import Main3 from "./sampodnath3/Main3";
-import Main4 from "./sampodnath4/Main4";
+
 import Main6 from "./sampodnath6/Main6";
 import Main5 from "./sampodnath5/Main5";
 import Main7 from "./sampodnath7_carosal/Main/Main7";
@@ -39,6 +39,8 @@ import Main9 from './sampod_9_leds_home/Main9'
 import Login from "./sampodnath8_login/Login";
 import Main10 from "./sampodnath10_registion2/Main10";
 import MainBlog from "./sampodnath11_blog/MainBlog";
+
+import ApproveMain from "./Approve/ApproveMain";
 
 
 
@@ -63,48 +65,46 @@ function App() {
 
     <BrowserRouter>
 
-    {/* <Header/> */}
+      {/* <Header/> */}
       <Routes>
         <Route path='/' element={<LoginPage />} />
         <Route path='/sampod' element={<Main />} />
         <Route path='/sampod2' element={<Main2 />} />
-        <Route path='/sampod3' element={<Main3 />} />
-        <Route path='/sampod4' element={<Main4 />} />
-        <Route path='/sampod5' element={<Main5 />}  />
+        <Route path='/home' element={<Main3 />} />
+        <Route path='/approve' element={<ApproveMain />} />
+        <Route path='/sampod5' element={<Main5 />} />
         <Route path='/sampod6' element={<Main6 />} />
         <Route path='/sampod7' element={<Main7 />} />
         <Route path='/sampod8' element={<Login />} />
         <Route path='/sampod9' element={<Main9 />} />
         <Route path='/sampod10' element={<Main10 />} />
         <Route path='/sampod11' element={<MainBlog />} />
-
-
-
-  
        
-        <Route path='/app' element={<UserProfile  user={user}/>} />
+
+
+        <Route path='/app' element={<UserProfile user={user} />} />
         <Route path='/homePage' element={<MediaCard />} />
         <Route path='/createpg' element={<CreatePg />} />
         <Route path='/edit' element={<Edit />} />
-        <Route path='/view/:id' element={<ViewPg/>} />
-        <Route path='/notification' element={<Notification user={user}/>} />
+        <Route path='/view/:id' element={<ViewPg />} />
+        <Route path='/notification' element={<Notification user={user} />} />
 
 
 
         {/* these are the main routes which has design  */}
 
-        <Route path='/register' element={<Register/>} />
-        <Route path='/bussiness' element={<Bussiness/>} />
-        <Route path='/user' element={<UserPage/>} />
-        <Route path='/pg' element={<PgListPage/>} />
-        <Route path='/pending' element={<PendingPageList/>} />
-        <Route path='/mcd' element={<Mcd user={user}/>} />
-        <Route path='/view/edit/:id' element={<UpdatePG/>} />
-        <Route path='/home' element={<Homes/>} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/bussiness' element={<Bussiness />} />
+        <Route path='/user' element={<UserPage />} />
+        <Route path='/pg' element={<PgListPage />} />
+        <Route path='/pending' element={<PendingPageList />} />
+        <Route path='/mcd' element={<Mcd user={user} />} />
+        <Route path='/view/edit/:id' element={<UpdatePG />} />
+        <Route path='/home' element={<Homes />} />
 
 
 
-   {/* custom  ProtectedRoute used to protect routes  watch 6 pack programmer's protected route video for info it is just 25 min */}
+        {/* custom  ProtectedRoute used to protect routes  watch 6 pack programmer's protected route video for info it is just 25 min */}
         {/* <Route
           path='/admin/user/ownedpg/:id'
           element={
@@ -130,28 +130,28 @@ function App() {
 
         {/* testing purpose routes  */}
 
-           <Route path='/admin/user-list' element={ <AllUsersList users={users} /> } />
-           <Route path='/admin/pg-list' element={ <AllPGList />} />
-           <Route path='/admin/pending' element={  <PendingPg user={user} />} />
-           <Route path='/admin/user/ownedpg/:id' element={ <OwnedPGList user={user} />} />
-   
+        <Route path='/admin/user-list' element={<AllUsersList users={users} />} />
+        <Route path='/admin/pg-list' element={<AllPGList />} />
+        <Route path='/admin/pending' element={<PendingPg user={user} />} />
+        <Route path='/admin/user/ownedpg/:id' element={<OwnedPGList user={user} />} />
 
-       {/* <Route path='/admin/user-list' element={(user && user.role==='admin') ? <AllUsersList users={users} /> : <LoginPage /> } />
+
+        {/* <Route path='/admin/user-list' element={(user && user.role==='admin') ? <AllUsersList users={users} /> : <LoginPage /> } />
        <Route path='/admin/pg-list'  element={(user && user.role==='admin') ? <AllPGList /> : <LoginPage /> } /> */}
-         
-       
-
-         <Route path='/admin/view-profile/:id/:userId' element={<ApproveReject user={specialUser} />} />
-          <Route path='/admin/update/user/:id' element={<UpdateUser />} />
-         
-          <Route path='/admin/update/pg/:id' element={<UpdatePg />} />
 
 
 
-          {/* custom  ProtectedRoute used to protect routes  watch 6 pack programmer's  youtube channel  protected route video for info it is just 25 min */}
+        <Route path='/admin/view-profile/:id/:userId' element={<ApproveReject user={specialUser} />} />
+        <Route path='/admin/update/user/:id' element={<UpdateUser />} />
 
-         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} user={user} loading={loading} isAdmin={true} />}>
-                      {/* 
+        <Route path='/admin/update/pg/:id' element={<UpdatePg />} />
+
+
+
+        {/* custom  ProtectedRoute used to protect routes  watch 6 pack programmer's  youtube channel  protected route video for info it is just 25 min */}
+
+        <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} user={user} loading={loading} isAdmin={true} />}>
+          {/* 
 
                                 <Route path='/admin/view-profile/:id/:userId' element={<ApproveReject user={specialUser} />} />
                                 <Route path='/admin/update/user/:id' element={<UpdateUser />} />

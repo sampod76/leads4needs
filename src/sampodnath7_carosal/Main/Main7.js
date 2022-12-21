@@ -11,7 +11,7 @@ import Intro from '../profileNew/Intro';
 import Group_77 from '../Img/Group_77.png'
 import UseShareButton from '../Hooks/UseShareButton';
 import Slider from 'react-slick';
-import './Main.css'
+
 import Footer from '../../Footer/Footer';
 
 const Main7 = () => {

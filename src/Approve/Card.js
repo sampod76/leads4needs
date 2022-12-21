@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = () => {
     return (
-        <div>
+        <div className='hidden mdd:block'>
             <div className='w-80 h-[28.125rem] lg:w-96 lg:h-[30rem]  bg-[#7065F0] rounded-2xl flex flex-col justify-between lg:px-6 lg:py-7 py-2 px-3 text-white ' >
 
                 <div>
