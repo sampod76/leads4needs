@@ -196,7 +196,7 @@ const From = () => {
 
                 <div className='mt-2 border-2 border-gray-300 p-[0.685rem] rounded-lg'>
                     <div className='grid grid-cols-6 gap-1 justify-between items-center'>
-                        <div className='flex flex-col justify-center items-center border-2 border-gray-300 rounded-xl h-20 md:h-28 lg:h-28  text-center  sm:text-xs'>
+                        <div className='flex flex-col justify-center items-center border-2 border-gray-300 rounded-xl h-20 md:h-28 lg:h-36 text-center  sm:text-xs'>
                             <h1 className=' text-[10px] md:text-base'>+</h1>
                             <h1 className=' text-[10px] md:text-base'>More</h1>
                             <h1 className=' text-[8px]'>Uplode 5 image</h1>

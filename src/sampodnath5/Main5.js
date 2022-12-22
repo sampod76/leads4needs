@@ -13,8 +13,8 @@ const Main5 = () => {
 
                 <Navber></Navber>
                 <RouterNav></RouterNav>
-                {/* <Table></Table> */}
-                <TablePG></TablePG>
+                <Table></Table>
+                {/* <TablePG></TablePG> */}
             </div>
 
 
