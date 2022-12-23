@@ -299,7 +299,7 @@ const TablePG = () => {
             </div>
             <div>
 
-                <Modal
+            <Modal
                     isOpen={modalIsOpen}
                     onAfterOpen={afterOpenModal}
                     onRequestClose={closeModal}
@@ -318,14 +318,14 @@ const TablePG = () => {
                         </div>
 
                         <form className='space-y-3'>
-                            <input type="search" onChange={handleRoleUser} name="" id="" placeholder='Search people, users, etc' className='border-2 rounded-lg p-2 w-full my-1' />
+                            <input type="search" onChange={handleRoleUser} name="" id="" placeholder='Search people, users, etc' className={`border-2 rounded-lg p-2 w-full my-1  ${userRole&& 'hidden'}`}/>
                             <div className='max-h-[50vh] overflow-y-auto space-y-2'>
                                 {
                                     searchUsers.length === 0 ? 'No user found' :
                                         searchUsers?.map((user, i) =>
                                             <div key={i}>
 
-                                                <div onClick={handleRoleOpener} className={` gap-3 items-center border-2 rounded-lg justify-between p-1 ${userRole ? 'hidden' : 'flex'}`}>
+                                                <div onClick={() => setUserRole(true)} className={` gap-3 items-center border-2 rounded-lg justify-between p-1 ${userRole ? 'hidden' : 'flex'}`}>
                                                     <div className='flex gap-2'>
                                                         <img src={user.img} alt="" className='w-11 h-11 rounded-full mt-2' />
                                                         <div className=''>
@@ -333,7 +333,7 @@ const TablePG = () => {
                                                             <p className='text-base capitalize'>{user.occupation}</p>
                                                         </div>
                                                     </div>
-                                                    <button type='reset' className='border-2 p-2 rounded-lg bg-blue-500 text-white'>Remove</button>
+                                                    <button type='reset' className='border-2 p-2 rounded-lg bg-blue-500 text-white'>View</button>
                                                 </div>
                                                 <div className={`space-y-2 ${userRole ? 'block' : 'hidden '}`}>
                                                     <div className='flex gap-3 items-center border-2 rounded-lg justify-between p-1'>
@@ -344,7 +344,7 @@ const TablePG = () => {
                                                                 <p className='text-base capitalize'>{user.occupation}</p>
                                                             </div>
                                                         </div>
-                                                        <button type='reset' className='border-2 p-2 rounded-lg bg-blue-500 text-white'>Remove</button>
+                                                        <button onClick={() => setUserRole(false)} type='reset' className='border-2 p-2 rounded-lg bg-blue-500 text-white'>Remove</button>
                                                     </div>
                                                     <div className='border-2 rounded-lg flex gap-3'>
                                                         <input type="radio" name="admin" id="admin" />
@@ -366,6 +366,10 @@ const TablePG = () => {
                                                             <h5>Moderater</h5>
                                                             <p>This role manages everything on the Page. It’s the only role that can edit the Page and manage all admins.  </p>
                                                         </label>
+                                                    </div>
+                                                    <div className='flex justify-end'>
+
+                                                        <button className='text-white px-4 py-2 bg-blue-500 rounded-lg' type="reset">Save</button>
                                                     </div>
                                                 </div>
                                             </div>
