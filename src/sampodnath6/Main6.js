@@ -38,7 +38,7 @@ const Main6 = () => {
     }
 
     return (
-        <div className=''>
+        <div className='font-Poppins'>
             <Banner openRatingModal={openRatingModal}></Banner >
             <Properties openRatingModal={openRatingModal}></Properties>
             <div>
@@ -57,12 +57,12 @@ const Main6 = () => {
                         </div>
                         <p className='mt-2 font-bold ml-1 text-xl'>Q.How much rating you give <span className='text-[#7065F0]'>Sampod narayen </span> PG ?</p>
                         <Emoji></Emoji>
-                       
+
                         <div className='flex justify-end gap-2 mr-3'>
                             <button onClick={successfullRating} className='bg-[#7065F0] rounded-md p-2 px-4 text-white'>Submit</button>
-                          
+
                         </div>
-                        
+
                     </div>
                 </Modal>
             </div>

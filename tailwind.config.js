@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     extend: {
-      screens : {
+      screens: {
         sm: '480px',
         smm: '668px',
         md: '768px',
@@ -12,10 +12,11 @@ module.exports = {
         lgg: '1160px',
         lggg: '1230px',
         xl: '1440px',
-      
+        xxl: '1920px',
       },
       fontFamily: {
         'Lora': ['"Lora"', 'serif'],
+        'Poppins': ['"Poppins"', 'sans-serif'], 
       },
     },
   },

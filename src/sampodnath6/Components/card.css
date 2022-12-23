@@ -1,18 +1,18 @@
-.card {
+.mcd {
   border-radius: 13px;
 }
-.card i {
+.mcd i {
   position: absolute;
   /* top: 50%; */
   left: -15px;
   width: 170px;
   height: 50px;
   background: #6366f1;
-  border-radius: 15px;
+  border-radius: 10px;
   border-bottom-left-radius: 0;
 }
 
-.card i::before {
+.mcd i::before {
   content: "";
   position: absolute;
   top: 50px;
@@ -24,7 +24,7 @@
   z-index: 2;
 }
 
-.card i::after {
+.mcd i::after {
   content: "";
   position: absolute;
   top: 50px;

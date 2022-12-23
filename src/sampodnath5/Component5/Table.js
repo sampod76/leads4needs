@@ -1,13 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMail } from "react-icons/ai";
 import { IoCallOutline } from "react-icons/io5";
 import { BiTimeFive } from "react-icons/bi";
+import Modal from 'react-modal'
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '0%',
+
+        transform: 'translate(-50%, -50%)',
+    },
+};
+const UserData = [
+    {
+        name: 'sampod',
+        occupation: 'developer',
+        img: 'https://images.unsplash.com/photo-1671638738896-787ef80a9f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=60'
+    },
+    {
+        name: 'Abir',
+        occupation: 'webdeveloper',
+        img: 'https://images.unsplash.com/photo-1671638738896-787ef80a9f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=60'
+    },
+    {
+        name: 'kobir',
+        occupation: 'reactdeveloper',
+        img: 'https://images.unsplash.com/photo-1671638738896-787ef80a9f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=60'
+    }
+]
 const Table = () => {
+    let subtitle;
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [searchUsers, setSearchUsers] = useState([])
+    const [userRole, setUserRole] = useState(false)
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#000000';
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
+    const handleRoleUser = (e) => {
+        const search = e.target.value.toLowerCase();
+        if (search.length > 0) {
+            const filteredNames = UserData.filter(user => user.name.toLowerCase().includes(search))
+            setSearchUsers(filteredNames)
+        } else {
+            setSearchUsers([])
+        }
+    }
+
     return (
         <div>
             <div className='flex justify-between my-3'>
                 <h2>286 users</h2>
-                <button className='px-4 py-2 rounded-xl bg-blue-600 text-white'>Add Role</button>
+                <button onClick={openModal} className='px-4 py-2 rounded-xl bg-blue-600 text-white'>Add Role</button>
             </div>
             <div class="md:w-full mx-auto">
 
@@ -223,7 +280,7 @@ const Table = () => {
                                                 <button className='bg-blue-600 rounded-lg px-4 py-2 text-white'>Profile</button>
                                             </td>
                                         </tr>
-                                      
+
 
                                     </tbody>
                                 </table>
@@ -231,6 +288,92 @@ const Table = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+
+                <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+
+                >
+                    <div className='w-[30.875rem]  '>
+                        <div className=''>
+
+                            <div className='flex justify-between bg-[#7065F0] text-white rounded-md p-3'>
+                                <h2 ref={(_subtitle) => (subtitle = _subtitle)} className='text-white text-lg p-2 rounded-xl'>Add Role</h2>
+                                <button onClick={closeModal} className='px-2 text-3xl rounded-lg text-white'>X</button>
+
+                            </div>
+                        </div>
+
+                        <form className='space-y-3'>
+                            <input type="search" onChange={handleRoleUser} name="" id="" placeholder='Search people, users, etc' className={`border-2 rounded-lg p-2 w-full my-1  ${userRole&& 'hidden'}`}/>
+                            <div className='max-h-[50vh] overflow-y-auto space-y-2'>
+                                {
+                                    searchUsers.length === 0 ? 'No user found' :
+                                        searchUsers?.map((user, i) =>
+                                            <div key={i}>
+
+                                                <div onClick={() => setUserRole(true)} className={` gap-3 items-center border-2 rounded-lg justify-between p-1 ${userRole ? 'hidden' : 'flex'}`}>
+                                                    <div className='flex gap-2'>
+                                                        <img src={user.img} alt="" className='w-11 h-11 rounded-full mt-2' />
+                                                        <div className=''>
+                                                            <p className='text-base -mb-[2px] mt-2 font-semibold capitalize'>{user.name}</p>
+                                                            <p className='text-base capitalize'>{user.occupation}</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type='reset' className='border-2 p-2 rounded-lg bg-blue-500 text-white'>View</button>
+                                                </div>
+                                                <div className={`space-y-2 ${userRole ? 'block' : 'hidden '}`}>
+                                                    <div className='flex gap-3 items-center border-2 rounded-lg justify-between p-1'>
+                                                        <div className='flex gap-2'>
+                                                            <img src={user.img} alt="" className='w-11 h-11 rounded-full mt-2' />
+                                                            <div className=''>
+                                                                <p className='text-base -mb-[2px] mt-2 font-semibold capitalize'>{user.name}</p>
+                                                                <p className='text-base capitalize'>{user.occupation}</p>
+                                                            </div>
+                                                        </div>
+                                                        <button onClick={() => setUserRole(false)} type='reset' className='border-2 p-2 rounded-lg bg-blue-500 text-white'>Remove</button>
+                                                    </div>
+                                                    <div className='border-2 rounded-lg flex gap-3'>
+                                                        <input type="radio" name="admin" id="admin" />
+                                                        <label htmlFor='admin'>
+                                                            <h5>Admin</h5>
+                                                            <p>This role manages everything on the Page. It’s the only role that can edit the Page and manage all admins. </p>
+                                                        </label>
+                                                    </div>
+                                                    <div className='border-2 rounded-lg flex gap-3'>
+                                                        <input type="radio" name="admin" id="super" />
+                                                        <label htmlFor='super'>
+                                                            <h5>Super Admin</h5>
+                                                            <p>This role manages everything on the Page. It’s the only role that can edit the Page and manage all admins.  </p>
+                                                        </label>
+                                                    </div>
+                                                    <div className='border-2 rounded-lg flex gap-3'>
+                                                        <input type="radio" name="admin" id="modarate" />
+                                                        <label htmlFor='modarate'>
+                                                            <h5>Moderater</h5>
+                                                            <p>This role manages everything on the Page. It’s the only role that can edit the Page and manage all admins.  </p>
+                                                        </label>
+                                                    </div>
+                                                    <div className='flex justify-end'>
+
+                                                        <button className='text-white px-4 py-2 bg-blue-500 rounded-lg' type="reset">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )
+                                }
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </Modal>
             </div>
         </div>
     );

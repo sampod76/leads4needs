@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Card from './Component/Card';
-import From from './Component/From';
+import Card from './Card';
+import From from './From';
 
 
 
-const Main10 = () => {
+const ApproveMain = () => {
 
 
     return (
@@ -19,4 +19,4 @@ const Main10 = () => {
     );
 };
 
-export default Main10;
+export default ApproveMain;
