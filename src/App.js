@@ -39,6 +39,8 @@ import Main9 from './sampod_9_leds_home/Main9'
 import Login from "./sampodnath8_login/Login";
 import Main10 from "./sampodnath10_registion2/Main10";
 import MainBlog from "./sampodnath11_blog/MainBlog";
+import { Question } from "./Theory/QuestionsPage/Question";
+import { Users } from "./Theory/UserProfilePage/Users";
 
 
 
@@ -77,6 +79,10 @@ function App() {
         <Route path='/sampod9' element={<Main9 />} />
         <Route path='/sampod10' element={<Main10 />} />
         <Route path='/sampod11' element={<MainBlog />} />
+        <Route path='/qu' element={<Users />} />
+        <Route path='/q' element={<Question />} />
+
+       
 
 
 
