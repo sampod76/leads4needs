@@ -5,7 +5,7 @@ import { FiTrash2 } from 'react-icons/fi';
 import { TagsInput } from 'react-tag-input-component';
 
 import UplodeImgCard from './UplodeImgCard';
-import { ImageGroup, Image } from 'react-fullscreen-image'
+
 
 const From = () => {
     const [selected, setSelected] = useState(["papaya"]);

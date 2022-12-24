@@ -43,6 +43,7 @@ import { Question } from "./Theory/QuestionsPage/Question";
 import { Users } from "./Theory/UserProfilePage/Users";
 
 import ApproveMain from "./Approve/ApproveMain";
+import CourseArticle from "./Theory/Course Article/CourseArticle";
 
 
 
@@ -81,17 +82,16 @@ function App() {
         <Route path='/sampod9' element={<Main9 />} />
         <Route path='/sampod10' element={<Main10 />} />
         <Route path='/sampod11' element={<MainBlog />} />
-<<<<<<< HEAD
         <Route path='/qu' element={<Users />} />
         <Route path='/q' element={<Question />} />
+        <Route path="/ca" element={<CourseArticle/>}/>
+
 
        
 
 
 
   
-=======
->>>>>>> ca2aff53f9b2bf2c3c700dca0727aacbeb4ffe97
        
 
 
