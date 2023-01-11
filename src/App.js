@@ -43,12 +43,7 @@ import { Question } from "./Theory/QuestionsPage/Question";
 import { Users } from "./Theory/UserProfilePage/Users";
 
 import ApproveMain from "./Approve/ApproveMain";
-<<<<<<< HEAD
-import Question from "./Quiz/QuestionsPage/Question";
-import Users from "./Quiz/UserProfilePage/Users";
-=======
-import CourseArticle from "./Theory/Course Article/CourseArticle";
->>>>>>> aaaf69fb6881e3fef03a073210951510dac1114f
+
 
 
 
@@ -76,33 +71,21 @@ function App() {
       {/* <Header/> */}
       <Routes>
         <Route path='/' element={<LoginPage />} />
+
+        {/* ----------sampod nath----------- */}
         <Route path='/sampod' element={<Main />} />
         <Route path='/sampod2' element={<Main2 />} />
         <Route path='/home' element={<Main3 />} />
         <Route path='/approve' element={<ApproveMain />} />
         <Route path='/sampod5' element={<Main5 />} />
-        <Route path='/sampod6' element={<Main6 />} />
+        <Route path='/mc' element={<Main6 />} />
         <Route path='/sampod7' element={<Main7 />} />
         <Route path='/sampod8' element={<Login />} />
         <Route path='/sampod9' element={<Main9 />} />
         <Route path='/sampod10' element={<Main10 />} />
         <Route path='/sampod11' element={<MainBlog />} />
-<<<<<<< HEAD
-        <Route path="/questionpage" element={<Question></Question>}/>
-        <Route path="/usersprofile" element={<Users></Users>}/>
-=======
-        <Route path='/qu' element={<Users />} />
-        <Route path='/q' element={<Question />} />
-        <Route path="/ca" element={<CourseArticle/>}/>
 
-
-       
-
-
-
-  
->>>>>>> aaaf69fb6881e3fef03a073210951510dac1114f
-       
+        {/* ----------sampod nath --- end-------- */}
 
 
         <Route path='/app' element={<UserProfile user={user} />} />
@@ -112,7 +95,7 @@ function App() {
         <Route path='/view/:id' element={<ViewPg />} />
         <Route path='/notification' element={<Notification user={user} />} />
 
-{/* mm  */}
+
 
         {/* these are the main routes which has design  */}
 

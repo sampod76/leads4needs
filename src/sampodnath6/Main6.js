@@ -66,10 +66,7 @@ const Main6 = () => {
                     </div>
                 </Modal>
             </div>
-            <Toaster
-                position="top-center"
-                reverseOrder={false}
-            />
+           
         </div>
     );
 };

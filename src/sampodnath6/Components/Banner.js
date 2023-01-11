@@ -15,7 +15,7 @@ import { useState, } from "react";
 import Emoji from "./Emoji/Emoji";
 
 import { toast, Toaster } from "react-hot-toast";
-// import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
 
@@ -50,7 +50,7 @@ const Banner = ({ openRatingModal }) => {
 
 
 
-                    {/* <CopyToClipboard text={'https://leads4needs.com/businessview/63452ed7d4d81e3a9492bb3e'}
+                    <CopyToClipboard text={'https://leads4needs.com/businessview/63452ed7d4d81e3a9492bb3e'}
 
                     >
 
@@ -63,7 +63,7 @@ const Banner = ({ openRatingModal }) => {
                         </span> <h5 className="text-xs sm:text-base md:text-lg mt-2" title="https://leads4needs.com/businessview/63452ed7d4d81e3a9492bb3e">leads4needs.com</h5> <span className="bg-indigo-500 text-white px-2  md:px-3 py-1 md:py-2 text-base md:text-lg rounded-lg text-center ">Copy</span> <span className="text-red-600 font-bold mt-2">{text}</span>
                       </buttom>
 
-                    </CopyToClipboard> */}
+                    </CopyToClipboard>
 
                   </div>
 
