@@ -14,7 +14,7 @@ const Card = ({ openRatingModal }) => {
   return (
     <>
 
-      <div className='mcd w-[90%] md:w-full mx-auto shadow-lg '>
+      <div className='mcd w-[90%] h-fit md:w-full mx-auto shadow-lg '>
 
         <div className='h-[50%] '>
           <img src="https://placeimg.com/400/225/arch" alt="" className="object-cover object-center  w-full rounded-t-2xl h-full " />
@@ -33,7 +33,7 @@ const Card = ({ openRatingModal }) => {
           </p>
 
           <hr className="-mt-2" />
-          <div className="flex justify-between -mt-10 py-6">
+          <div className="flex justify-between -mt-5 pt-1">
             <div className="flex items-center gap-2">
               <FontAwesomeIcon
                 icon={faClock}
@@ -67,7 +67,7 @@ const Card = ({ openRatingModal }) => {
         </div>
 
       </div>
-      <div className='mcd  w-80 sm:w-96 md:w-full mx-auto shadow-lg '>
+      <div className='mcd w-[90%] h-fit md:w-full mx-auto shadow-lg '>
 
         <div className='h-[50%] '>
           <img src="https://placeimg.com/400/225/arch" alt="" className="object-cover object-center  w-full rounded-t-2xl h-full " />
@@ -114,7 +114,7 @@ const Card = ({ openRatingModal }) => {
 
 
       </div>
-      <div className='mcd  w-80 sm:w-96 md:w-full mx-auto shadow-lg '>
+      <div className='mcd w-[90%] h-fit md:w-full mx-auto shadow-lg '>
 
         <div className='h-[50%] '>
           <img src="https://placeimg.com/400/225/arch" alt="" className="object-cover object-center  w-full rounded-t-2xl h-full " />

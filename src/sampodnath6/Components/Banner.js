@@ -46,10 +46,6 @@ const Banner = ({ openRatingModal }) => {
                       Prabhat Center, 505 Fifth floor, Sector 1A, CBD Belapur, Navi
                       Mumbai, Maharashtra 400614
                     </p>
-
-
-
-
                     <CopyToClipboard text={'https://leads4needs.com/businessview/63452ed7d4d81e3a9492bb3e'}
 
                     >
@@ -60,7 +56,8 @@ const Banner = ({ openRatingModal }) => {
                             <path d="M8.98868 12.0067C9.42057 12.5847 9.97158 13.0629 10.6043 13.4089C11.2371 13.755 11.9368 13.9608 12.656 14.0123C13.3752 14.0639 14.0971 13.96 14.7727 13.7078C15.4482 13.4555 16.0617 13.0608 16.5715 12.5503L19.5885 9.53024C20.5045 8.58092 21.0113 7.30946 20.9998 5.98971C20.9884 4.66995 20.4596 3.4075 19.5273 2.47426C18.5949 1.54102 17.3338 1.01166 16.0153 1.00019C14.6969 0.988722 13.4267 1.49606 12.4784 2.41295L10.7486 4.13438" stroke="#484ECE" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
                             <path d="M13.0113 9.99331C12.5795 9.41534 12.0284 8.93711 11.3957 8.59106C10.7629 8.245 10.0632 8.03921 9.344 7.98765C8.6248 7.93609 7.90293 8.03997 7.22736 8.29223C6.55179 8.54449 5.93832 8.93924 5.42855 9.4497L2.41153 12.4698C1.49557 13.4191 0.988733 14.6905 1.00019 16.0103C1.01165 17.33 1.54048 18.5925 2.47278 19.5257C3.40508 20.459 4.66626 20.9883 5.98469 20.9998C7.30311 21.0113 8.57329 20.5039 9.52165 19.5871L11.2414 17.8656" stroke="#484ECE" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
                           </svg>
-                        </span> <h5 className="text-xs sm:text-base md:text-lg mt-2" title="https://leads4needs.com/businessview/63452ed7d4d81e3a9492bb3e">leads4needs.com</h5> <span className="bg-indigo-500 text-white px-2  md:px-3 py-1 md:py-2 text-base md:text-lg rounded-lg text-center ">Copy</span> <span className="text-red-600 font-bold mt-2">{text}</span>
+                        </span> <h5 className="text-xs sm:text-base md:text-lg mt-2" title="https://leads4needs.com/businessview/63452ed7d4d81e3a9492bb3e">leads4needs.com</h5> 
+                        <span className="bg-indigo-500 text-white px-2 py-2 text-base md:text-lg rounded-lg text-center ">Copy</span>  <span className="text-red-600 font-bold mt-2">{text}</span>
                       </buttom>
 
                     </CopyToClipboard>

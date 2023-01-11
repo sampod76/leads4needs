@@ -20,19 +20,14 @@ const Properties = ({ openRatingModal }) => {
     <div className="max-w-[1440px] mx-auto">
 
       <div className="w-full md:w-[90%] mx-auto  ">
-        <div className="flex justify-between  w-80 md:w-[90%] mx-auto lg:w-full">
+        <div className="flex justify-between  w-[90%] mx-auto lg:w-full">
           <h1 className="text-2xl font-bold">Properties</h1>
-          <div className="flex gap-4">
 
-            <button>
-              <p className=" "><BsFillPencilFill className="text-3xl"></BsFillPencilFill></p>
+          <button onClick={openModal} className="mr-1 border-2 p-2 rounded-lg text-lg mb-2 -mt-2 text-blue-500 border-blue-400">
+            <span className="mr-3">+ </span> <span>  Add New</span>
 
-            </button>
-            <button onClick={openModal} className="mr-1 border-2 p-2 rounded-lg text-lg mb-2 -mt-2">
-              <span className="mr-3">+ </span> <span>  Add New</span>
+          </button>
 
-            </button>
-          </div>
 
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lgg:grid-cols-3 gap-8 md:m-8 lg:m-0 my-2">
