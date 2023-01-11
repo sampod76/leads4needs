@@ -28,7 +28,7 @@ import PgListPage from './componenets/Layout/PgList'
 import PendingPageList from './componenets/Layout/PendingPageList'
 import UpdatePG from './componenets/UpdatePG';
 import Mcd from './componenets/Layout/Mcd'
-import Main from "./sampodnath/Main/Main";
+
 import Main2 from "./sampodnath2/main/Main2";
 import Main3 from "./sampodnath3/Main3";
 
@@ -39,8 +39,6 @@ import Main9 from './sampod_9_leds_home/Main9'
 import Login from "./sampodnath8_login/Login";
 import Main10 from "./sampodnath10_registion2/Main10";
 import MainBlog from "./sampodnath11_blog/MainBlog";
-import { Question } from "./Theory/QuestionsPage/Question";
-import { Users } from "./Theory/UserProfilePage/Users";
 
 import ApproveMain from "./Approve/ApproveMain";
 
@@ -73,7 +71,7 @@ function App() {
         <Route path='/' element={<LoginPage />} />
 
         {/* ----------sampod nath----------- */}
-        <Route path='/sampod' element={<Main />} />
+        {/* <Route path='/sampod' element={<Main />} /> */}
         <Route path='/sampod2' element={<Main2 />} />
         <Route path='/home' element={<Main3 />} />
         <Route path='/approve' element={<ApproveMain />} />

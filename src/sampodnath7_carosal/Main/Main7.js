@@ -13,6 +13,7 @@ import UseShareButton from '../Hooks/UseShareButton';
 import Slider from 'react-slick';
 
 import Footer from '../../Footer/Footer';
+import Navbar from '../profileNew/Navbar'
 
 const Main7 = () => {
     function classNames(...classes) {
@@ -62,7 +63,7 @@ const Main7 = () => {
 
                 <div className='md:container mx-auto p-4 flex flex-col justify-between absolute md:relative top-[90%]  bg-white rounded-[1.875rem]  overflow-hidden'>
 
-                    {/* <Navbar></Navbar> */}
+                    <Navbar></Navbar>
 
 
                     <Image></Image>
