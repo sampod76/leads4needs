@@ -4,7 +4,7 @@ import './card.css'
 
 const BuisnessCard = () => {
     return (
-        <div className='card  w-full  mx-auto shadow-lg  '>
+        <div className='card  w-full h-fit mx-auto shadow-lg  '>
 
         <div className='h-[50%]  '>
 

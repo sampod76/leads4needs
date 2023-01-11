@@ -12,15 +12,22 @@ const Leftside = ({openRatingModal}) => {
                 <p className='font-semibold md:text-xl '>11 a.m. to 7:00 p.m.</p>
                 <div onClick={openRatingModal} className='flex items-center '>
                     <div className='flex mt-1 gap-1'>
-                        {/* <FcRating></FcRating>
-                        <FcRating></FcRating>
-                        <FcRating></FcRating>
-                        <FcRating></FcRating> */}
-                        <svg className=' h-full w-full' width="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       
+                        <svg className=' mt-0.5 h-full w-full' width="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
                         </svg>
+                        <svg className=' mt-0.5 h-full w-full' width="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
+                        </svg>
+                        <svg className=' mt-0.5 h-full w-full' width="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
+                        </svg>
+                        <svg className=' mt-0.5 h-full w-full' width="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
+                        </svg>
+                       
                      
-                        <p >9.5Review</p>
+                        <p className='whitespace-nowrap'>9.5 Review</p>
                     </div>
                 </div>
             </div>
@@ -63,7 +70,7 @@ const Leftside = ({openRatingModal}) => {
             </div>
             <div className='space-y-4'>
                 <h3 className='font-semibold text-3xl'>Description :</h3>
-                <p className='text-lg md:text-3xl font-normal'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website. </p>
+                <p className='text-lg md:text-2xl font-normal'>Pg In Provide the Best Facility at a Very Less Price, This Pg Business Specialization is no AC, Geyser, wifi, and More. If you want to connect with these Pg In, Click on Contact Details and Directly Call This Business Owner without any Circumstances. If you are interested in this business profile so directly call, and firstly please say that you got This Business Detail from PgWars.com Website. </p>
             </div>
 
             <div className='space-y-5 block md:hidden '>

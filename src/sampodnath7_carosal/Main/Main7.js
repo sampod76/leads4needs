@@ -62,13 +62,8 @@ const Main7 = () => {
                 </div>
 
                 <div className='md:container mx-auto p-4 flex flex-col justify-between absolute md:relative top-[90%]  bg-white rounded-[1.875rem]  overflow-hidden'>
-
                     <Navbar></Navbar>
-
-
                     <Image></Image>
-
-
                     <div className='flex justify-between gap-11  md:my-10 '>
 
                         <div className='w-[98%] md:w-[60%] mt-4'>
@@ -84,8 +79,8 @@ const Main7 = () => {
                         <Intro></Intro>
                     </div>
                 </div>
-            {/* <Footer></Footer> */}
             </div>
+            {/* <Footer></Footer> */}
         </div>
     );
 };

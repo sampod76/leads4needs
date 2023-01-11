@@ -17,7 +17,7 @@ const Price = () => {
                     <p className='mt-2 lg:text-2xl md:text-base lg:font-semibold'>Double Rooms</p><span>|</span>
                     <p className='mt-2 lg:text-2xl md:text-base lg:font-semibold'>₹4000</p>
                 </div>
-                <div className='flex justify-evenly items-center border-2 rounded-lg  py-1 md:py-2 xl:h-[6.5rem] md:h-[5.5rem]'>
+                <div className='flex justify-evenly items-center bg-[#7065F0] rounded-lg text-white py-1 md:py-2 xl:h-[6.5rem] md:h-[5.5rem]'>
                     <h1 className='text-4xl lg:font-bold'>3</h1>
                     <p className='mt-2 lg:text-2xl md:text-base lg:font-semibold'>Triple Rooms</p><span >|</span>
                     <p className='mt-2 lg:text-2xl md:text-base lg:font-semibold'>₹4000</p>

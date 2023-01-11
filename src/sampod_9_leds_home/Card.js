@@ -3,7 +3,7 @@ import { IoIosMan } from 'react-icons/io';
 
 const Card = () => {
     return (
-        <div className='card  w-full  mx-auto shadow-lg  '>
+        <div className='card  w-full h-fit  mx-auto shadow-lg  '>
 
         <div className='h-[50%]  '>
 

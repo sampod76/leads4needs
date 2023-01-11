@@ -64,10 +64,7 @@ const Features = () => {
 
                         <div className='flex items-center -mt-2'>
                             <div className='flex -mt-1'>
-                                {/* <FcRating></FcRating>
-                                    <FcRating></FcRating>
-                                    <FcRating></FcRating>
-                                    <FcRating></FcRating> */}
+                               
                                 <svg width="15" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFA800" />
                                 </svg><svg width="15" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +81,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className='hidden md:block ld:-mt-10'>
-                        <button className='flex  items-center bg-blue-500 rounded-lg px-4 py-2 text-white '>
+                        <button className='flex  items-center bg-blue-500 rounded-lg px-4 py-2 text-white gap-1'>
 
                             <svg width="15" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 0L13.09 6.58254L20 7.64458L15 12.7655L16.18 20L10 16.5825L3.82 20L5 12.7655L0 7.64458L6.91 6.58254L10 0Z" fill="#FFFFFF" />
@@ -96,7 +93,7 @@ const Features = () => {
                 <div className='md:my-2  md:mr-1'>
                     <div className='flex justify-between'>
 
-                        <h5 className='mb-3'>Features</h5>
+                        <h5 className='mb-3 text-2xl'>Features</h5>
                         <button onClick={()=>setFeatures(!features)} className='block md:hidden text-[#2194FF]'>See More</button>
                     </div>
                     <div className='hidden md:grid  md:grid-cols-4 md:gap-3 lg:gap-8   '>
@@ -122,8 +119,8 @@ const Features = () => {
                     <h5 className='font-semibold mt-2 md:mt-5 space-y-2  md:text-2xl'>PG Agent</h5>
                     <div className='flex  space-x-2' >
                         <img src={Group_84} alt="" className='w-14 h-14 md:w-20 md:h-20 ' />
-                        <div className='space-y-1'>
-                            <h6 className='font-bold md:text-lg'>Jenna White</h6>
+                        <div className='space-y-1 mt-1.5'>
+                            <h6 className='font-bold md:text-xl'>Jenna White</h6>
                             <p className='md:text-lg'>Owner   9876543210</p>
                         </div>
                     </div>

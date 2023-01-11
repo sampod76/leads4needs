@@ -20,11 +20,11 @@ const Intro = () => {
                 <h3>Share this business</h3>
 
                 <div className='flex gap-2 my-3'>
-                    <FaFacebook className='w-10  h-10 ' ></FaFacebook>
-                    <FaLinkedin className='w-10  h-10 ' ></FaLinkedin>
-                    <FaWhatsappSquare className='w-10  h-10 ' ></FaWhatsappSquare>
-                    <FaTwitterSquare className='w-10  h-10 ' ></FaTwitterSquare>
-                    <SiTelegram className='w-10  h-10 ' ></SiTelegram>
+                <FaFacebook className='w-10  h-10 text-blue-500' ></FaFacebook>
+                <FaLinkedin className='w-10  h-10 text-blue-900' ></FaLinkedin>
+                <FaWhatsappSquare className='w-10  h-10 text-emerald-800' ></FaWhatsappSquare>
+                <FaTwitterSquare className='w-10  h-10 text-blue-500' ></FaTwitterSquare>
+                <SiTelegram className='w-10  h-10 text-blue-400' ></SiTelegram>
                 </div>
             </div>
 
