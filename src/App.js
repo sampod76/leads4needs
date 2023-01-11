@@ -43,7 +43,12 @@ import { Question } from "./Theory/QuestionsPage/Question";
 import { Users } from "./Theory/UserProfilePage/Users";
 
 import ApproveMain from "./Approve/ApproveMain";
+<<<<<<< HEAD
+import Question from "./Quiz/QuestionsPage/Question";
+import Users from "./Quiz/UserProfilePage/Users";
+=======
 import CourseArticle from "./Theory/Course Article/CourseArticle";
+>>>>>>> aaaf69fb6881e3fef03a073210951510dac1114f
 
 
 
@@ -82,6 +87,10 @@ function App() {
         <Route path='/sampod9' element={<Main9 />} />
         <Route path='/sampod10' element={<Main10 />} />
         <Route path='/sampod11' element={<MainBlog />} />
+<<<<<<< HEAD
+        <Route path="/questionpage" element={<Question></Question>}/>
+        <Route path="/usersprofile" element={<Users></Users>}/>
+=======
         <Route path='/qu' element={<Users />} />
         <Route path='/q' element={<Question />} />
         <Route path="/ca" element={<CourseArticle/>}/>
@@ -92,6 +101,7 @@ function App() {
 
 
   
+>>>>>>> aaaf69fb6881e3fef03a073210951510dac1114f
        
 
 
@@ -102,7 +112,7 @@ function App() {
         <Route path='/view/:id' element={<ViewPg />} />
         <Route path='/notification' element={<Notification user={user} />} />
 
-
+{/* mm  */}
 
         {/* these are the main routes which has design  */}
 
